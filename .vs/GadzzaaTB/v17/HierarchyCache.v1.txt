@@ -1,0 +1,298 @@
+﻿++Solution 'GadzzaaTB' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:GadzzaaTB.sln
+++Solution Items
+i:{00000000-0000-0000-0000-000000000000}:Solution Items
+++Righteous-Regular.ttf
+i:{4dd65f48-b04d-4662-be0d-48cc2759fd9d}:C:\Users\Robert Popescu\Desktop\GadzzaaTB\WpfApplication1\Fonts\Righteous-Regular.ttf
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\fonts\righteous-regular.ttf
+++GadzzaaTB
+i:{00000000-0000-0000-0000-000000000000}:GadzzaaTB
+++Properties
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\properties\
+++AssemblyInfo.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\properties\assemblyinfo.cs
+++Resources.resx
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\properties\resources.resx
+++Resources.Designer.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\properties\resources.designer.cs
+++References
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.CSharp
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Extensions.Logging.Abstractions
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.WindowsAPICodePack
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.WindowsAPICodePack.Shell
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++mscorlib
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Newtonsoft.Json
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Ookii.Dialogs.Wpf
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++PresentationCore
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++PresentationFramework
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.ComponentModel.Composition
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Core
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Data
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Design
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Drawing
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.IO
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Net.Http
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Runtime
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Security
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Security.Cryptography.Algorithms
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Security.Cryptography.Encoding
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Security.Cryptography.Primitives
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Security.Cryptography.X509Certificates
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Xaml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++TwitchLib.Api
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++TwitchLib.Api.Core
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++TwitchLib.Api.Core.Enums
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++TwitchLib.Api.Core.Interfaces
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++TwitchLib.Api.Core.Models
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++TwitchLib.Api.Helix
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++TwitchLib.Api.Helix.Models
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++TwitchLib.Api.V5
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++TwitchLib.Api.V5.Models
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++TwitchLib.Client
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++TwitchLib.Client.Enums
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++TwitchLib.Client.Models
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++TwitchLib.Communication
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++TwitchLib.PubSub
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++WindowsBase
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++bin
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\
+++Fonts
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\fonts\
+++obj
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\
+++a.ico
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\a.ico
+++App.config
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\app.config
+++App.xaml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\app.xaml
+++Background copy.png
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\background copy.png
+++MainWindow.xaml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\mainwindow.xaml
+++MainWindow.xaml.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\mainwindow.xaml.cs
+++minimap.png
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\minimap.png
+++minimize-window-512.png
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\minimize-window-512.png
+++minus.png
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\minus.png
+++packages.config
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\packages.config
+++Settings1.settings
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\settings1.settings
+++Untitled-3.png
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\untitled-3.png
+++x-png-35415.png
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\x-png-35415.png
+++Debug
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\
+++Release
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\
+++App.xaml.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\app.xaml.cs
+++Settings1.Designer.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\settings1.designer.cs
+++Microsoft.Extensions.Logging.Abstractions.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.logging.abstractions.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.logging.abstractions.dll
+++Microsoft.Extensions.Logging.Abstractions.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.logging.abstractions.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.logging.abstractions.xml
+++Microsoft.WindowsAPICodePack.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.windowsapicodepack.dll
+++Microsoft.WindowsAPICodePack.Shell.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.windowsapicodepack.shell.dll
+++Microsoft.WindowsAPICodePack.Shell.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.windowsapicodepack.shell.xml
+++Microsoft.WindowsAPICodePack.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.windowsapicodepack.xml
+++Newtonsoft.Json.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\newtonsoft.json.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\newtonsoft.json.dll
+++Newtonsoft.Json.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\newtonsoft.json.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\newtonsoft.json.xml
+++Ookii.Dialogs.Wpf.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\ookii.dialogs.wpf.dll
+++Ookii.Dialogs.Wpf.pdb
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\ookii.dialogs.wpf.pdb
+++Ookii.Dialogs.Wpf.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\ookii.dialogs.wpf.xml
+++TwitchLib.Api.Core.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.core.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.core.dll
+++TwitchLib.Api.Core.Enums.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.core.enums.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.core.enums.dll
+++TwitchLib.Api.Core.Enums.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.core.enums.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.core.enums.xml
+++TwitchLib.Api.Core.Interfaces.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.core.interfaces.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.core.interfaces.dll
+++TwitchLib.Api.Core.Interfaces.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.core.interfaces.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.core.interfaces.xml
+++TwitchLib.Api.Core.Models.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.core.models.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.core.models.dll
+++TwitchLib.Api.Core.Models.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.core.models.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.core.models.xml
+++TwitchLib.Api.Core.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.core.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.core.xml
+++TwitchLib.Api.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.dll
+++TwitchLib.Api.Helix.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.helix.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.helix.dll
+++TwitchLib.Api.Helix.Models.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.helix.models.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.helix.models.dll
+++TwitchLib.Api.Helix.Models.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.helix.models.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.helix.models.xml
+++TwitchLib.Api.Helix.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.helix.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.helix.xml
+++TwitchLib.Api.V5.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.v5.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.v5.dll
+++TwitchLib.Api.V5.Models.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.v5.models.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.v5.models.dll
+++TwitchLib.Api.V5.Models.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.v5.models.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.v5.models.xml
+++TwitchLib.Api.V5.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.v5.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.v5.xml
+++TwitchLib.Api.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.xml
+++TwitchLib.Client.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.client.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.client.dll
+++TwitchLib.Client.Enums.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.client.enums.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.client.enums.dll
+++TwitchLib.Client.Enums.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.client.enums.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.client.enums.xml
+++TwitchLib.Client.Models.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.client.models.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.client.models.dll
+++TwitchLib.Client.Models.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.client.models.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.client.models.xml
+++TwitchLib.Client.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.client.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.client.xml
+++TwitchLib.Communication.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.communication.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.communication.dll
+++TwitchLib.PubSub.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.pubsub.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.pubsub.dll
+++TwitchLib.PubSub.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.pubsub.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.pubsub.xml
+++WpfApplication1.exe
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\wpfapplication1.exe
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\wpfapplication1.exe
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\wpfapplication1.exe
+++WpfApplication1.exe.config
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\wpfapplication1.exe.config
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\wpfapplication1.exe.config
+++WpfApplication1.pdb
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\wpfapplication1.pdb
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\wpfapplication1.pdb
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\wpfapplication1.pdb
+++.NETFramework,Version=v4.8.AssemblyAttributes.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\.netframework,version=v4.8.assemblyattributes.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\.netframework,version=v4.8.assemblyattributes.cs
+++App.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\app.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\app.g.i.cs
+++MainWindow.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\mainwindow.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\mainwindow.g.i.cs
+++App.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\app.g.cs
+++MainWindow.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\mainwindow.g.cs
+++WpfApplication1.csproj.AssemblyReference.cache
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\wpfapplication1.csproj.assemblyreference.cache
+++WpfApplication1.csproj.CopyComplete
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\wpfapplication1.csproj.copycomplete
+++WpfApplication1.csproj.CoreCompileInputs.cache
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\wpfapplication1.csproj.corecompileinputs.cache
+++WpfApplication1.csproj.FileListAbsolute.txt
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\wpfapplication1.csproj.filelistabsolute.txt
+++WpfApplication1.csproj.GenerateResource.cache
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\wpfapplication1.csproj.generateresource.cache
+++WpfApplication1.csproj.SuggestedBindingRedirects.cache
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\wpfapplication1.csproj.suggestedbindingredirects.cache
+++WpfApplication1.g.resources
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\wpfapplication1.g.resources
+++WpfApplication1.Properties.Resources.resources
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\wpfapplication1.properties.resources.resources
+++WpfApplication1_MarkupCompile.cache
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\wpfapplication1_markupcompile.cache
+++WpfApplication1_MarkupCompile.lref
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\wpfapplication1_markupcompile.lref
+++GadzzaaTB.exe
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\gadzzaatb.exe
+++GadzzaaTB.exe.config
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\gadzzaatb.exe.config
+++GadzzaaTB.pdb
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\gadzzaatb.pdb

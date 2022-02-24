@@ -1,0 +1,12 @@
+﻿<Window x:Name="MainWindowU" x:Class="GadzzaaTB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="GadzzaaTB" Icon="../gadzzaa_Dq1_icon.ico" Height="350" Width="525" WindowStyle="SingleBorderWindow"
+        ResizeMode="CanMinimize" Background="White" Visibility="Visible">
+    <DockPanel>
+        <Frame x:Name="NavigationFrame1" NavigationUIVisibility="Hidden" />
+    </DockPanel>
+</Window>

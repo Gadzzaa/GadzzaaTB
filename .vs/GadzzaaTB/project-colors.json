@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5393cc5a-dfd6-4158-b2e9-29b9c2c725e8": {
+      "ProjectGuid": "5393cc5a-dfd6-4158-b2e9-29b9c2c725e8",
+      "DisplayName": "GadzzaaTB",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

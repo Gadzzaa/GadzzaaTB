@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TwitchLib.Api.Helix</name>
+    </assembly>
+    <members>
+        <member name="M:TwitchLib.Api.Helix.Helix.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,TwitchLib.Api.Core.Interfaces.IRateLimiter,TwitchLib.Api.Core.Interfaces.IApiSettings,TwitchLib.Api.Core.Interfaces.IHttpCallHandler)">
+            <summary>
+            Creates an Instance of the Helix Class.
+            </summary>
+            <param name="loggerFactory">Instance Of LoggerFactory, otherwise no logging is used, </param>
+            <param name="rateLimiter">Instance Of RateLimiter, otherwise no ratelimiter is used.</param>
+            <param name="settings">Instance of ApiSettings, otherwise defaults used, can be changed later</param>
+            <param name="http">Instance of HttpCallHandler, otherwise default handler used</param>
+        </member>
+    </members>
+</doc>
