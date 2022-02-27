@@ -85,7 +85,7 @@ namespace GadzzaaTB {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("!np")]
         public string Command1 {
             get {
                 return ((string)(this["Command1"]));
@@ -97,7 +97,7 @@ namespace GadzzaaTB {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("!nppp")]
         public string Command2 {
             get {
                 return ((string)(this["Command2"]));

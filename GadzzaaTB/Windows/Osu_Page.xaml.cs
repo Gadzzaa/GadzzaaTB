@@ -55,6 +55,7 @@ namespace GadzzaaTB
             {
                 Settings1.Default.Command1 = Command1.Text;
             }
+
             Console.WriteLine("Lost focus for Command1");
         }
 
@@ -80,6 +81,7 @@ namespace GadzzaaTB
             {
                 Settings1.Default.Command2 = Command2.Text;
             }
+
             Console.WriteLine("Lost Focus for Command2");
         }
 
@@ -103,6 +105,11 @@ namespace GadzzaaTB
                 // Kill keyboard focus
                 Keyboard.ClearFocus();
             }
+        }
+
+        private void DaPula(object sender, RoutedEventArgs e)
+        {
+            Main.main.bugReportp.Show();
         }
     }
 }

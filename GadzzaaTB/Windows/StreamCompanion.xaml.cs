@@ -145,5 +145,10 @@ namespace GadzzaaTB
             StartWebSocket.Visibility = Visibility.Visible;
             DisconnectSCWebsocket.Visibility = Visibility.Hidden;
         }
+
+        private void DaPula(object sender, RoutedEventArgs e)
+        {
+            Main.main.bugReportp.Show();
+        }
     }
 }

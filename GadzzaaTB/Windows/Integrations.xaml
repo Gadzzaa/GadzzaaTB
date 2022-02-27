@@ -47,6 +47,13 @@
                 <SolidColorBrush Color="#7FFFFFFF" Opacity="0.5" />
             </Button.Background>
         </Button>
+        <Button x:Name="BugReportBUtton" Content="Bug Report" HorizontalAlignment="Left" Height="25"
+                VerticalAlignment="Top" Width="75" BorderBrush="White" Foreground="White" Click="DaPula"
+                Cursor="Hand" Visibility="Visible">
+            <Button.Background>
+                <SolidColorBrush Color="#7FFFFFFF" Opacity="0.5" />
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Page>

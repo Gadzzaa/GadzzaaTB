@@ -18,10 +18,10 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="Command1" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">!np</Value>
     </Setting>
     <Setting Name="Command2" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">!nppp</Value>
     </Setting>
   </Settings>
 </SettingsFile>

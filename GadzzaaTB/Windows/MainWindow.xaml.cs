@@ -1,9 +1,8 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Windows;
 using Microsoft.VisualBasic.Devices;
-using System.Diagnostics;
-
 
 namespace GadzzaaTB
 {
@@ -12,16 +11,17 @@ namespace GadzzaaTB
         public static FileStream ostrm;
         public static StreamWriter writer;
         public static TextWriter oldOut = Console.Out;
-        public Main MainW; 
-        StackTrace stackTrace = new StackTrace();
+        public bool isClosing;
+        public Main MainW;
+        private StackTrace stackTrace = new StackTrace();
 
 
         public MainWindow()
         {
             var path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) +
-              "\\GadzzaaTB\\logs\\" + DateTime.UtcNow.Year + "-" + DateTime.UtcNow.Month + "-" +
-              DateTime.UtcNow.Day + " " + DateTime.UtcNow.Hour + "-" + DateTime.UtcNow.Minute + "-" +
-              DateTime.UtcNow.Second + ".txt";
+                       "\\GadzzaaTB\\logs\\" + DateTime.UtcNow.Year + "-" + DateTime.UtcNow.Month + "-" +
+                       DateTime.UtcNow.Day + " " + DateTime.UtcNow.Hour + "-" + DateTime.UtcNow.Minute + "-" +
+                       DateTime.UtcNow.Second + ".txt";
             Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) +
                                       "\\GadzzaaTB\\logs\\");
             Console.WriteLine(path);
@@ -74,11 +74,28 @@ namespace GadzzaaTB
             InitializeComponent();
             MainW = new Main();
             Loaded += MyWindow_Loaded;
+            Closed += MyWindow_Closed;
+            AppDomain.CurrentDomain.ProcessExit += OnProcessExit;
+        }
+
+        private void MyWindow_Closed(object sender, EventArgs e)
+        {
+            isClosing = true;
+            Main.main.bugReportp.Close();
         }
 
         private void MyWindow_Loaded(object sender, RoutedEventArgs e)
         {
             NavigationFrame1.NavigationService.Navigate(MainW);
+        }
+
+
+        private static void OnProcessExit(object sender, EventArgs e)
+        {
+            Console.WriteLine("||||||||||||||||||||||||||||||||||");
+            Test();
+            foreach (var process in Process.GetProcessesByName("osu!StreamCompanion")) process.Kill();
+            Settings1.Default.Save();
         }
 
         private static ulong GetTotalMemoryInBytes()

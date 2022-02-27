@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows;
+using GadzzaaTB;
 
 namespace Tcoc.ExceptionHandler.Windows
 {
@@ -17,6 +18,7 @@ namespace Tcoc.ExceptionHandler.Windows
         // application.
         private void OnExitAppClick(object sender, RoutedEventArgs e)
         {
+            MainWindow.Test();
             Process.Start(Application.ResourceAssembly.Location);
             Application.Current.Shutdown();
         }

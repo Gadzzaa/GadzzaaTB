@@ -163,6 +163,9 @@
     <Reference Include="NuGet.Frameworks, Version=6.1.0.106, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\NuGet.Frameworks.6.1.0\lib\net472\NuGet.Frameworks.dll</HintPath>
     </Reference>
+    <Reference Include="Octokit, Version=0.50.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Octokit.0.50.0\lib\net46\Octokit.dll</HintPath>
+    </Reference>
     <Reference Include="Ookii.Dialogs.Wpf, Version=5.0.0.0, Culture=neutral, PublicKeyToken=66aa232afad40158, processorArchitecture=MSIL">
       <HintPath>..\packages\Ookii.Dialogs.Wpf.5.0.1\lib\net462\Ookii.Dialogs.Wpf.dll</HintPath>
     </Reference>
@@ -280,6 +283,11 @@
     <Compile Include="ExceptionWindow\ExceptionWindowViewModel.cs" />
     <Compile Include="ExceptionWindow\UnknownAppDomainException.cs" />
     <Compile Include="ExceptionWindow\GlobalExceptionHandlerBase.cs" />
+    <Compile Include="Passwords.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Passwords.resx</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Integrations.xaml.cs">
       <DependentUpon>Integrations.xaml</DependentUpon>
     </Compile>
@@ -304,6 +312,9 @@
       <DependentUpon>ExceptionWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="ExceptionWindow\WindowExceptionHandler.cs" />
+    <Compile Include="Windows\BugReport.xaml.cs">
+      <DependentUpon>BugReport.xaml</DependentUpon>
+    </Compile>
     <Page Include="Windows\Integrations.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -340,6 +351,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\BugReport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -350,6 +365,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Passwords.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Passwords.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

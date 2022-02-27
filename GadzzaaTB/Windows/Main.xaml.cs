@@ -1,9 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media;
+using GadzzaaTB.Windows;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using TwitchLib.Client;
@@ -13,7 +14,6 @@ using TwitchLib.Communication.Clients;
 using TwitchLib.Communication.Events;
 using TwitchLib.Communication.Models;
 using WebSocketSharp;
-using Color = System.Drawing.Color;
 
 
 // Optional, exposes types-related classes, useful for storing result in variables.
@@ -35,8 +35,7 @@ namespace GadzzaaTB
         public static JObject cache2 = new JObject();
         public static bool firstMessageLoaded;
         public bool autoStartBot = Settings1.Default.AutoStartB;
-        public string BotNameMain = "gadzzaaBot";
-        public string BotOAuthMain = "oauth:bt8bcegge9bbt2r1b2izez56k6ll5q";
+        public BugReport bugReportp;
 
         public string ChannelNameMain;
         public bool firsttime;
@@ -55,31 +54,32 @@ namespace GadzzaaTB
             main = this;
             InitializeComponent();
 
-            Console.WriteLine(); Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
             Console.WriteLine("|| SETTINGS ||");
-            Console.WriteLine("Command 1: " + Settings1.Default.Command1.ToString());
-            Console.WriteLine("Command 2: " + Settings1.Default.Command2.ToString());
-            Console.WriteLine("Auto Start SC: " + Settings1.Default.AutoStart.ToString());
-            Console.WriteLine("Twitch Bot Auto Start: " + Settings1.Default.AutoStartB.ToString());
-            Console.WriteLine("Channel Name: " + Settings1.Default.ChannelName.ToString());
-            Console.WriteLine("Location Folder SC: " + Settings1.Default.LocationFolder.ToString());
-            Console.WriteLine("Account linked : " + Settings1.Default.isLinked.ToString());
+            Console.WriteLine("Command 1: " + Settings1.Default.Command1);
+            Console.WriteLine("Command 2: " + Settings1.Default.Command2);
+            Console.WriteLine("Auto Start SC: " + Settings1.Default.AutoStart);
+            Console.WriteLine("Twitch Bot Auto Start: " + Settings1.Default.AutoStartB);
+            Console.WriteLine("Channel Name: " + Settings1.Default.ChannelName);
+            Console.WriteLine("Location Folder SC: " + Settings1.Default.LocationFolder);
+            Console.WriteLine("Account linked : " + Settings1.Default.isLinked);
             Console.WriteLine("||||||||||||||");
-            Console.WriteLine(); Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
             if (autoStartBot) ActivateBot();
             //   GRAB SETTINGS
             ChannelNameMain = Settings1.Default.ChannelName;
             //   EVENT HANDLERS
-            AppDomain.CurrentDomain.ProcessExit += OnProcessExit;
             twitchp = new TwitchPage();
             osup = new Osu_Page();
             IntegP = new Integrations();
             StreamCP = new StreamCompanion();
+            bugReportp = new BugReport();
             ws.OnMessage += Ws_OnMessage;
             ws.OnOpen += Ws_OnOpen;
             ws.OnClose += Ws_OnClose;
             ws.OnError += Ws_OnError;
-
         }
 
         private void Ws_OnError(object sender, ErrorEventArgs e)
@@ -169,14 +169,6 @@ namespace GadzzaaTB
             //   Console.WriteLine("TEST: " + cache2.GetValue("osuIsRunning"));
         }
 
-        private static void OnProcessExit(object sender, EventArgs e)
-        {
-            foreach (var process in Process.GetProcessesByName("osu!StreamCompanion")) process.Kill();
-            Settings1.Default.Save();
-            MainWindow.Test();
-            Console.WriteLine("||||||||||||||||||||||||||||||||||");
-        }
-
         public static void ActivateBot()
         {
             Console.WriteLine("Activate Bot Request Sent !");
@@ -245,6 +237,23 @@ namespace GadzzaaTB
             Console.WriteLine("Navigation to osu! Tab Request Sent!");
         }
 
+        public string DecodeFrom64(string encodedData)
+        {
+            var encoder = new UTF8Encoding();
+            var utf8Decode = encoder.GetDecoder();
+            var todecode_byte = Convert.FromBase64String(encodedData);
+            var charCount = utf8Decode.GetCharCount(todecode_byte, 0, todecode_byte.Length);
+            var decoded_char = new char[charCount];
+            utf8Decode.GetChars(todecode_byte, 0, todecode_byte.Length, decoded_char, 0);
+            var result = new string(decoded_char);
+            return result;
+        }
+
+        public void DaPula(object sender, RoutedEventArgs e)
+        {
+            bugReportp.Show();
+        }
+
         public class Bot
         {
             public int i;
@@ -257,7 +266,8 @@ namespace GadzzaaTB
 
             public Bot()
             {
-                var credentials = new ConnectionCredentials("gadzzaaBot", "oauth:xdrdib4ojqw8y6kfhxcbp42dewsqt4");
+                var credentials = new ConnectionCredentials(Passwords.TwitchBotName,
+                    main.DecodeFrom64(Passwords.TwitchBotOAuth));
                 var clientOptions = new ClientOptions
                 {
                     MessagesAllowedInPeriod = 750,
@@ -270,9 +280,23 @@ namespace GadzzaaTB
                 client.OnMessageReceived += Client_OnMessageReceived;
                 client.OnConnected += Client_OnConnected;
                 client.OnDisconnected += ClientMain_OnDisconnected;
+                client.OnLog += Client_OnLog;
+                client.OnIncorrectLogin += Client_IncorrectLogin;
 
                 client.Connect();
                 Console.WriteLine("Client Request 2 Sent");
+            }
+
+            private void Client_IncorrectLogin(object sender, OnIncorrectLoginArgs e)
+            {
+                MessageBox.Show("Incorrect Login Details! Make sure you entered your channel name correctly!\n" +
+                                "In case your channel name is correctly written, CONTACT gadzzaa ASAP!\n" +
+                                "Either through discord either through a bug report", "Twitch ERROR!");
+            }
+
+            private void Client_OnLog(object sender, OnLogArgs e)
+            {
+                Console.WriteLine("TwitchClient :  " + e.Data);
             }
 
             private void Client_OnConnected(object sender, OnConnectedArgs e)
@@ -467,6 +491,7 @@ namespace GadzzaaTB
                                     }
                                 }));
                             });
+                            client.Disconnect();
                         }
                     }
                     else if (e.ChatMessage.Message.Equals("!commands"))
@@ -500,6 +525,7 @@ namespace GadzzaaTB
                                     }
                                 }));
                             });
+                            client.Disconnect();
                         }
                         else
                         {
@@ -523,10 +549,6 @@ namespace GadzzaaTB
                     }
                 }
             }
-        }
-
-        private void DaPula(object sender, RoutedEventArgs e)
-        {
         }
     }
 }

@@ -48,13 +48,20 @@
         <TextBox x:Name="Command1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
                  FontFamily="{StaticResource Righteous}" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap"
                  Text="!np" VerticalAlignment="Bottom" Width="125" Background="#FFB9B9B9"
-                 BorderBrush="#FF7D7979" FontWeight="Regular" FontStretch="Normal" GotFocus="npGetFocus"
-                 LostFocus="npLoseFocus" KeyDown="OnKeyDownHandler" FontSize="20" Grid.Row="1" Margin="125,0,0,50" />
+                 BorderBrush="#FF7D7979" FontWeight="Regular" FontStretch="Normal" FontSize="20" Grid.Row="1"
+                 Margin="125,0,0,50" GotFocus="npGetFocus" LostFocus="npLoseFocus" KeyDown="OnKeyDownHandler" />
         <TextBox x:Name="Command2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
                  FontFamily="{StaticResource Righteous}" HorizontalAlignment="Right" Height="30" TextWrapping="Wrap"
                  Text="!nppp" VerticalAlignment="Bottom" Width="125" Background="#FFB9B9B9"
-                 BorderBrush="#FF7D7979" FontWeight="Regular" FontStretch="Normal" GotFocus="npppGetFocus"
-                 LostFocus="npppLoseFocus" KeyDown="OnKeyDownHandler2" FontSize="20" Grid.Row="1" Margin="0,0,125,50" />
+                 BorderBrush="#FF7D7979" FontWeight="Regular" FontStretch="Normal" FontSize="20" Grid.Row="1"
+                 Margin="0,0,125,50" LostFocus="npppLoseFocus" KeyDown="OnKeyDownHandler2" GotFocus="npppGetFocus" />
+        <Button x:Name="BugReportBUtton" Content="Bug Report" HorizontalAlignment="Left" Height="25"
+                VerticalAlignment="Top" Width="75" BorderBrush="White" Foreground="White" Click="DaPula"
+                Cursor="Hand" Visibility="Visible">
+            <Button.Background>
+                <SolidColorBrush Color="#7FFFFFFF" Opacity="0.5" />
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Page>

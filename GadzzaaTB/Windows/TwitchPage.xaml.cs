@@ -48,7 +48,6 @@ namespace GadzzaaTB
         {
             NavigationService.Navigate(Main.main.MainA.MainW);
             Console.WriteLine("Navigation to Main Tab Request Sent!");
-
         }
 
         /*   private void BotName_GetFocus(object sender, RoutedEventArgs e)
@@ -138,6 +137,7 @@ namespace GadzzaaTB
             {
                 Settings1.Default.ChannelName = ChannelNameY.Text;
             }
+
             Console.WriteLine("Lost focus for channel name");
         }
 
@@ -158,14 +158,22 @@ namespace GadzzaaTB
             DisconnectB.IsEnabled = false;
             ConnectB.IsEnabled = true;
             Main.client.Disconnect();
-            
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            DisconnectB.IsEnabled = true;
-            ConnectB.IsEnabled = false;
+            if (Settings1.Default.isLinked)
+            {
+                DisconnectB.IsEnabled = true;
+                ConnectB.IsEnabled = false;
+            }
+
             Main.ActivateBot();
+        }
+
+        private void DaPula(object sender, RoutedEventArgs e)
+        {
+            Main.main.bugReportp.Show();
         }
     }
 }

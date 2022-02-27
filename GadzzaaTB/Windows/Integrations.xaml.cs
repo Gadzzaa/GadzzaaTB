@@ -25,5 +25,10 @@ namespace GadzzaaTB
             NavigationService.Navigate(Main.main.MainA.MainW);
             Console.WriteLine("Navigation to Main Tab Request Sent!");
         }
+
+        private void DaPula(object sender, RoutedEventArgs e)
+        {
+            Main.main.bugReportp.Show();
+        }
     }
 }
