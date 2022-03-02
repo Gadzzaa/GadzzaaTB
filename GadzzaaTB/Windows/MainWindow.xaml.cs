@@ -18,6 +18,13 @@ namespace GadzzaaTB
 
         public MainWindow()
         {
+            if (Settings1.Default.FirstRun)
+                if (File.Exists(AppDomain.CurrentDomain.BaseDirectory +
+                                @"StreamCompanion\osu!StreamCompanion.exe"))
+                    Settings1.Default.LocationFolder =
+                        AppDomain.CurrentDomain.BaseDirectory + @"StreamCompanion";
+                else MessageBox.Show("Invalid install ! Please consider reinstalling the app!", "Error on startup!");
+            Settings1.Default.FirstRun = false;
             var path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) +
                        "\\GadzzaaTB\\logs\\" + DateTime.UtcNow.Year + "-" + DateTime.UtcNow.Month + "-" +
                        DateTime.UtcNow.Day + " " + DateTime.UtcNow.Hour + "-" + DateTime.UtcNow.Minute + "-" +

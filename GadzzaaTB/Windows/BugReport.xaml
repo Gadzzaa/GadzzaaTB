@@ -16,7 +16,7 @@
         </Grid.Background>
         <TextBox HorizontalAlignment="Center" Height="534" TextWrapping="Wrap" Text="BETA"
                  VerticalAlignment="Center" Width="628" Grid.RowSpan="2" FontSize="200" TextAlignment="Center"
-                 Background="#19FFFFFF" Foreground="#FF787234" IsEnabled="False"/>
+                 Background="#19FFFFFF" Foreground="#FF787234" IsEnabled="False" />
         <Rectangle HorizontalAlignment="Center" Height="35" VerticalAlignment="Top" Width="626" Fill="#7F000000" />
         <Label FontFamily="{StaticResource Righteous}" Content="GadzzaaTB" HorizontalAlignment="Center" Height="38"
                VerticalAlignment="Top" Width="141" FontSize="25" RenderTransformOrigin="0.5,0.5" Foreground="#FF11DE00"
@@ -37,12 +37,15 @@
                  FontSize="20" Grid.Row="1" Margin="0,50,0,0" TextChanged="BugReportName_TextChanged" />
         <TextBlock HorizontalAlignment="Center" Margin="0,15,0,0" Grid.Row="1" TextWrapping="Wrap"
                    Text="Bug Report Name" VerticalAlignment="Top" Foreground="White" FontSize="24" />
-        <ScrollViewer Grid.Column="1" Grid.Row="1"  CanContentScroll="True" VerticalScrollBarVisibility="Visible" Width="450" Height="125" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,40">
-            <TextBox x:Name="BugReportDescription" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+        <ScrollViewer Grid.Column="1" Grid.Row="1" CanContentScroll="True" VerticalScrollBarVisibility="Visible"
+                      Width="450" Height="125" HorizontalAlignment="Center" VerticalAlignment="Center"
+                      Margin="0,0,0,40">
+            <TextBox x:Name="BugReportDescription" HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center"
                      FontFamily="{StaticResource Righteous}" TextWrapping="Wrap"
                      Text="" Width="448" Background="#FFB9B9B9"
                      BorderBrush="#FF7D7979" FontWeight="Regular" FontStretch="Normal"
-                     FontSize="20" Margin="2,0,1,0" TextChanged="BugReportDesc_TextChanged" Grid.RowSpan="2" />
+                     FontSize="20" Margin="2,0,1,0" TextChanged="BugReportDesc_TextChanged" />
         </ScrollViewer>
 
         <TextBlock HorizontalAlignment="Center" Margin="0,275,0,0" Grid.Row="1" TextWrapping="Wrap"
@@ -50,7 +53,8 @@
                    Foreground="White" FontSize="24"
                    Text="Do you wish to submit the log file?" />
         <CheckBox Content="" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top" Height="16" Width="16"
-                  Margin="0,315,0,0" FontSize="24" RenderTransformOrigin="0.5,0.5" Checked="CheckBox_Checked" Unchecked="CheckBox_UnChecked">
+                  Margin="0,315,0,0" FontSize="24" RenderTransformOrigin="0.5,0.5" Checked="CheckBox_Checked"
+                  Unchecked="CheckBox_UnChecked">
             <CheckBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="2" ScaleY="2" />
@@ -66,7 +70,8 @@
         </TextBlock>
         <Button x:Name="SBugReport" FontFamily="{StaticResource Righteous}" Content="Submit"
                 HorizontalAlignment="Center" Height="40" Margin="0,375,0,0" VerticalAlignment="Top" Width="200"
-                BorderBrush="White" Foreground="White" Cursor="Hand" FontSize="24" Grid.Row="1" Click="SBugReport_Click">
+                BorderBrush="White" Foreground="White" Cursor="Hand" FontSize="24" Grid.Row="1"
+                Click="SBugReport_Click">
             <Button.Background>
                 <SolidColorBrush Color="#7FFFFFFF" Opacity="0.5" />
             </Button.Background>

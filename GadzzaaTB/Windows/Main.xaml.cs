@@ -301,7 +301,6 @@ namespace GadzzaaTB
 
             private void Client_OnConnected(object sender, OnConnectedArgs e)
             {
-                client.JoinChannel(Settings1.Default.ChannelName);
                 if (Settings1.Default.isLinked)
                 {
                     Console.WriteLine("Connected to " + Settings1.Default.ChannelName);
@@ -338,31 +337,28 @@ namespace GadzzaaTB
             private void ClientMain_OnDisconnected(object sender,
                 OnDisconnectedEventArgs e)
             {
+                Console.WriteLine("Disconnected from Twitch");
+                ConnectedB = false;
                 client.LeaveChannel(Settings1.Default.ChannelName);
-                if (Settings1.Default.isLinked)
+                Task.Factory.StartNew(() =>
                 {
-                    Console.WriteLine("Disconnected from Twitch");
-                    ConnectedB = false;
-                    Task.Factory.StartNew(() =>
+                    var op = main.Dispatcher.BeginInvoke((Action) (() =>
                     {
-                        var op = main.Dispatcher.BeginInvoke((Action) (() =>
                         {
+                            if (!main.firsttime)
                             {
-                                if (!main.firsttime)
-                                {
-                                    main.twitchp.ConnectB.Visibility = Visibility.Visible;
-                                    main.twitchp.DisconnectB.Visibility = Visibility.Hidden;
-                                    main.twitchp.ConnectB.IsEnabled = true;
-                                    main.twitchp.DisconnectB.IsEnabled = false;
-                                }
-
-                                main.twitchp.StatusB.Content = "Status : OFFLINE";
-                                main.twitchp.StatusB.Foreground = Brushes.Red;
-                                main.firsttime = false;
+                                main.twitchp.ConnectB.Visibility = Visibility.Visible;
+                                main.twitchp.DisconnectB.Visibility = Visibility.Hidden;
+                                main.twitchp.ConnectB.IsEnabled = true;
+                                main.twitchp.DisconnectB.IsEnabled = false;
                             }
-                        }));
-                    });
-                }
+
+                            main.twitchp.StatusB.Content = "Status : OFFLINE";
+                            main.twitchp.StatusB.Foreground = Brushes.Red;
+                            main.firsttime = false;
+                        }
+                    }));
+                });
             }
 
             private void Client_OnMessageReceived(object sender, OnMessageReceivedArgs e)
@@ -392,10 +388,13 @@ namespace GadzzaaTB
                             }
                             else
                             {
-                                npText = "Error on websocket";
+                                npText =
+                                    "Error on websocket, please try again | If you are still getting this error, please make sure StreamCompanion is online and ready to use!";
                                 Console.WriteLine(cache2);
                                 Console.WriteLine(cache2.HasValues);
                                 Console.WriteLine(firstMessageLoaded);
+                                main.ws.Close();
+                                main.ws.Connect();
                             }
 
                         client.SendMessage(e.ChatMessage.Channel, npText);

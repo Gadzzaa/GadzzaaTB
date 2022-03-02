@@ -1,11 +1,11 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.IO;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using Octokit;
-using System.IO;
-using System.Linq;
 using Application = System.Windows.Application;
 
 namespace GadzzaaTB.Windows
@@ -15,10 +15,11 @@ namespace GadzzaaTB.Windows
     /// </summary>
     public partial class BugReport : Window
     {
-        private string BugReportNameY;
         private string BugReportDescriptionY;
-        private bool SubmitLog = false;
+        private string BugReportNameY;
         private string line;
+        private bool SubmitLog;
+
         public BugReport()
         {
             InitializeComponent();
@@ -27,7 +28,7 @@ namespace GadzzaaTB.Windows
             Closing += Window_Closing;
         }
 
-            
+
         private void Window_Closing(object sender, CancelEventArgs e)
         {
             if (!Main.main.MainA.isClosing)
@@ -42,15 +43,20 @@ namespace GadzzaaTB.Windows
             var gClient = new GitHubClient(new ProductHeaderValue("Gadzzaa"));
             var tokenAuth = new Credentials("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"); // NOTE: not real token
             gClient.Credentials = tokenAuth;
-            var createIssue = new NewIssue(BugReportNameY);
+            Console.WriteLine("Bug Report Name: " + BugReportNameY);
+            Console.WriteLine("Bug Report Description: " + BugReportDescriptionY);
+            Console.WriteLine("Send Log?:" + SubmitLog);
+            var createIssue = new NewIssue(Environment.MachineName + "reported: " + BugReportNameY);
             if (SubmitLog)
             {
                 MainWindow.Test();
-                var directory = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\GadzzaaTB\\logs\\");
+                var directory =
+                    new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) +
+                                      "\\GadzzaaTB\\logs\\");
                 var myFile = directory.GetFiles()
                     .OrderByDescending(f => f.LastWriteTime)
                     .First();
-                StreamReader sr = new StreamReader(myFile.FullName);
+                var sr = new StreamReader(myFile.FullName);
                 line = sr.ReadLine();
                 BugReportDescriptionY += "\n\n\n\n\nLOG FILE:\n\n" + line + "\n";
                 line = sr.ReadLine();
@@ -62,25 +68,27 @@ namespace GadzzaaTB.Windows
                     //Read the next line
                     line = sr.ReadLine();
                 }
+
                 //close the file
                 sr.Close();
                 Console.ReadLine();
             }
+
             createIssue.Body = BugReportDescriptionY;
             var issue = await gClient.Issue.Create("Gadzzaa", "GadzzaaTB", createIssue);
-            this.Close();
+            Close();
             Process.Start(Application.ResourceAssembly.Location);
             Application.Current.Shutdown();
         }
 
         private void BugReportName_TextChanged(object sender, TextChangedEventArgs e)
         {
-            BugReportNameY = BugReportName.Text.ToString();
+            BugReportNameY = BugReportName.Text;
         }
 
         private void BugReportDesc_TextChanged(object sender, TextChangedEventArgs e)
         {
-            BugReportDescriptionY = BugReportDescription.Text.ToString();
+            BugReportDescriptionY = BugReportDescription.Text;
         }
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
