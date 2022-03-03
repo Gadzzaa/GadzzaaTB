@@ -33,7 +33,7 @@
             </Label.RenderTransform>
         </Label>
         <Button x:Name="StreamCompanion" FontFamily="{StaticResource Righteous}" Content="StreamCompanion"
-                HorizontalAlignment="Left" Height="40" Margin="50,0,0,100" VerticalAlignment="Center" Width="250"
+                HorizontalAlignment="Left" Height="40" Margin="50,83,0,0" VerticalAlignment="Top" Width="250"
                 BorderBrush="White" Foreground="White" Click="ShowStreamCompanion" Cursor="Hand" FontSize="24"
                 Grid.Row="1">
             <Button.Background>
@@ -50,6 +50,14 @@
         <Button x:Name="BugReportBUtton" Content="Bug Report" HorizontalAlignment="Left" Height="25"
                 VerticalAlignment="Top" Width="75" BorderBrush="White" Foreground="White" Click="DaPula"
                 Cursor="Hand" Visibility="Visible">
+            <Button.Background>
+                <SolidColorBrush Color="#7FFFFFFF" Opacity="0.5" />
+            </Button.Background>
+        </Button>
+        <Button x:Name="GOsumemory" FontFamily="{StaticResource Righteous}" Content="Gosumemory"
+            HorizontalAlignment="Left" Height="40" Margin="91,153,0,0" VerticalAlignment="Top" Width="168"
+            BorderBrush="White" Foreground="White" Click="ShowGosumemory" Cursor="Hand" FontSize="24"
+            Grid.Row="1">
             <Button.Background>
                 <SolidColorBrush Color="#7FFFFFFF" Opacity="0.5" />
             </Button.Background>

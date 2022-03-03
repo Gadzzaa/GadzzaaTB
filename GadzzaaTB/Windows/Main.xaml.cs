@@ -33,7 +33,9 @@ namespace GadzzaaTB
         public static TwitchClient client;
 
         public static JObject cache2 = new JObject();
+        public static JObject cache3 = new JObject();
         public static bool firstMessageLoaded;
+        public static bool firstMessageLoaded2;
         public bool autoStartBot = Settings1.Default.AutoStartB;
         public BugReport bugReportp;
 
@@ -45,7 +47,9 @@ namespace GadzzaaTB
         public Osu_Page osup;
         public StreamCompanion StreamCP;
         public TwitchPage twitchp;
+        public GosumemoryPage gosup;
         public WebSocket ws = new WebSocket("ws://localhost:20727/tokens");
+        public WebSocket ws2 = new WebSocket("ws://localhost:24050/ws");
 
 
         public Main()
@@ -74,24 +78,142 @@ namespace GadzzaaTB
             twitchp = new TwitchPage();
             osup = new Osu_Page();
             IntegP = new Integrations();
-            StreamCP = new StreamCompanion();
+            StreamCP = new StreamCompanion(); 
+            gosup = new GosumemoryPage();
             bugReportp = new BugReport();
             ws.OnMessage += Ws_OnMessage;
             ws.OnOpen += Ws_OnOpen;
             ws.OnClose += Ws_OnClose;
             ws.OnError += Ws_OnError;
+            ws2.OnMessage += Ws2_OnMessage;
+            ws2.OnOpen += Ws2_OnOpen;
+            ws2.OnClose += Ws2_OnClose;
+            ws2.OnError += Ws2_OnError;
+            
+        }
+
+        private void Ws2_OnError(object sender, ErrorEventArgs e)
+        {
+            Console.WriteLine("ERROR ON WEBSOCKET2: " + e.Exception);
+            Console.WriteLine("ERROR ON WEBSOCKET2: " + e.Exception);
+            Console.WriteLine("ERROR ON WEBSOCKET2: " + e.Exception);
+            Console.WriteLine("ERROR ON WEBSOCKET2: " + e.Exception);
+            Console.WriteLine("ERROR ON WEBSOCKET2: " + e.Exception);
+            Console.WriteLine("ERROR ON WEBSOCKET2: " + e.Exception);
+            Console.WriteLine("ERROR ON WEBSOCKET2: " + e.Exception);
+            Console.WriteLine("ERROR ON WEBSOCKET2: " + e.Exception);
+        }
+
+        private void Ws2_OnClose(object sender, CloseEventArgs e)
+        {
+            Console.Write("Websocket2 Closed!");
+
+        }
+
+        private void Ws2_OnOpen(object sender, EventArgs e)
+        {
+            Console.WriteLine("Connected to gosumemory Websocket!");
+        }
+
+        private void Ws2_OnMessage(object sender, MessageEventArgs e)
+        {
+            if (!cache3.HasValues)
+            {
+                cache3.Add("SR", JObject.Parse(e.Data).SelectToken("menu.bm.stats.fullSR"));
+                cache3.Add("artist", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.artist"));
+                cache3.Add("title", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.title")); 
+                cache3.Add("mapper", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.mapper"));
+                cache3.Add("difficulty", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.difficulty"));
+                cache3.Add("str", JObject.Parse(e.Data).SelectToken("menu.mods.str"));
+                cache3.Add("id", JObject.Parse(e.Data).SelectToken("menu.bm.id"));
+                cache3.Add("ssPP", JObject.Parse(e.Data).SelectToken("menu.pp.100"));
+                cache3.Add("99pp", JObject.Parse(e.Data).SelectToken("menu.pp.99"));
+                cache3.Add("98pp", JObject.Parse(e.Data).SelectToken("menu.pp.98"));
+                cache3.Add("97pp", JObject.Parse(e.Data).SelectToken("menu.pp.97"));
+                cache3.Add("96pp", JObject.Parse(e.Data).SelectToken("menu.pp.96"));
+                cache3.Add("95pp", JObject.Parse(e.Data).SelectToken("menu.pp.95"));
+            }
+            else
+            {
+                if (cache3.GetValue("SR") != JObject.Parse(e.Data).SelectToken("menu.bm.stats.fullSR"))
+                {
+                    cache3.Remove("SR");
+                    cache3.Add("SR", JObject.Parse(e.Data).SelectToken("menu.bm.stats.fullSR"));
+                }
+                if (cache3.GetValue("artist") != JObject.Parse(e.Data).SelectToken("menu.bm.metadata.artist"))
+                {
+                    cache3.Remove("artist");
+                    cache3.Add("artist", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.artist"));
+                }
+                if (cache3.GetValue("title") != JObject.Parse(e.Data).SelectToken("menu.bm.metadata.title"))
+                {
+                    cache3.Remove("title");
+                    cache3.Add("title", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.title"));
+                }
+                if (cache3.GetValue("mapper") != JObject.Parse(e.Data).SelectToken("menu.bm.metadata.mapper"))
+                {
+                    cache3.Remove("mapper");
+                    cache3.Add("mapper", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.mapper"));
+                }
+                if (cache3.GetValue("difficulty") != JObject.Parse(e.Data).SelectToken("menu.bm.metadata.difficulty"))
+                {
+                    cache3.Remove("difficulty");
+                    cache3.Add("difficulty", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.difficulty"));
+                }
+                if (cache3.GetValue("str") != JObject.Parse(e.Data).SelectToken("menu.mods.str"))
+                {
+                    cache3.Remove("str");
+                    cache3.Add("str", JObject.Parse(e.Data).SelectToken("menu.mods.str"));
+                }
+                if (cache3.GetValue("id") != JObject.Parse(e.Data).SelectToken("menu.bm.id"))
+                {
+                    cache3.Remove("id");
+                    cache3.Add("id", JObject.Parse(e.Data).SelectToken("menu.bm.id"));
+                }
+                if (cache3.GetValue("ssPP") != JObject.Parse(e.Data).SelectToken("menu.pp.100"))
+                {
+                    cache3.Remove("ssPP");
+                    cache3.Add("ssPP", JObject.Parse(e.Data).SelectToken("menu.pp.100"));
+                }
+                if (cache3.GetValue("99pp") != JObject.Parse(e.Data).SelectToken("menu.pp.99"))
+                {
+                    cache3.Remove("99pp");
+                    cache3.Add("99pp", JObject.Parse(e.Data).SelectToken("menu.pp.99"));
+                }
+                if (cache3.GetValue("98pp") != JObject.Parse(e.Data).SelectToken("menu.pp.98"))
+                {
+                    cache3.Remove("98pp");
+                    cache3.Add("98pp", JObject.Parse(e.Data).SelectToken("menu.pp.98"));
+                }
+                if (cache3.GetValue("97pp") != JObject.Parse(e.Data).SelectToken("menu.pp.97"))
+                {
+                    cache3.Remove("97pp");
+                    cache3.Add("97pp", JObject.Parse(e.Data).SelectToken("menu.pp.97"));
+                }
+                if (cache3.GetValue("96pp") != JObject.Parse(e.Data).SelectToken("menu.pp.96"))
+                {
+                    cache3.Remove("96pp");
+                    cache3.Add("96pp", JObject.Parse(e.Data).SelectToken("menu.pp.96"));
+                }
+                if (cache3.GetValue("95pp") != JObject.Parse(e.Data).SelectToken("menu.pp.95"))
+                {
+                    cache3.Remove("95pp");
+                    cache3.Add("95pp", JObject.Parse(e.Data).SelectToken("menu.pp.95"));
+                }
+            }
+
+            //Console.WriteLine(cache3);
+
         }
 
         private void Ws_OnError(object sender, ErrorEventArgs e)
         {
-            StreamCP.Status.Content = "Status: Error";
-            StreamCP.Status.Foreground = Brushes.Red;
             Task.Factory.StartNew(() =>
             {
                 var op = main.Dispatcher.BeginInvoke((Action) (() =>
                 {
                     {
-                        StreamCP.Status.Content = "Status: Offline";
+                        StreamCP.Status.Content = "Status: Error";
                         StreamCP.Status.Foreground = Brushes.Red;
                         StreamCP.StartWebSocket.Visibility = Visibility.Visible;
                         StreamCP.DisconnectSCWebsocket.Visibility = Visibility.Hidden;

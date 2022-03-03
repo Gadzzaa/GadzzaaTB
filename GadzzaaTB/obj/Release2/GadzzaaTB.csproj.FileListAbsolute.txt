@@ -122,3 +122,6 @@ C:\Users\Robert Popescu\Desktop\GadzzaaTB\GadzzaaTB\obj\Release2\Windows\TwitchP
 C:\Users\Robert Popescu\Desktop\GadzzaaTB\GadzzaaTB\obj\Release2\ExceptionWindow\ExceptionWindow.g.cs
 C:\Users\Robert Popescu\Desktop\GadzzaaTB\GadzzaaTB\obj\Release2\Windows\BugReport.g.cs
 C:\Users\Robert Popescu\Desktop\GadzzaaTB\GadzzaaTB\obj\Release2\GadzzaaTB.Passwords.resources
+C:\Users\Robert Popescu\Desktop\GadzzaaTB\GadzzaaTB\obj\Release2\Windows\GosumemoryPage.g.cs
+C:\Users\Robert Popescu\Desktop\GadzzaaTB\GadzzaaTB\obj\Release2\GadzzaaTB_MarkupCompile.lref
+C:\Users\Robert Popescu\Desktop\GadzzaaTB\GadzzaaTB\obj\Release2\Windows\GosumemoryPage.baml

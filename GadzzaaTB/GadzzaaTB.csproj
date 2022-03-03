@@ -288,6 +288,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Passwords.resx</DependentUpon>
     </Compile>
+    <Compile Include="Windows\GosumemoryPage.xaml.cs">
+      <DependentUpon>GosumemoryPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Integrations.xaml.cs">
       <DependentUpon>Integrations.xaml</DependentUpon>
     </Compile>
@@ -315,6 +318,10 @@
     <Compile Include="Windows\BugReport.xaml.cs">
       <DependentUpon>BugReport.xaml</DependentUpon>
     </Compile>
+    <Page Include="Windows\GosumemoryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\Integrations.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

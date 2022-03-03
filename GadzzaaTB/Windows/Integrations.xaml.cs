@@ -30,5 +30,10 @@ namespace GadzzaaTB
         {
             Main.main.bugReportp.Show();
         }
+
+        private void ShowGosumemory(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(Main.main.gosup);
+        }
     }
 }
