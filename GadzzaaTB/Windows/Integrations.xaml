@@ -55,9 +55,9 @@
             </Button.Background>
         </Button>
         <Button x:Name="GOsumemory" FontFamily="{StaticResource Righteous}" Content="Gosumemory"
-            HorizontalAlignment="Left" Height="40" Margin="91,153,0,0" VerticalAlignment="Top" Width="168"
-            BorderBrush="White" Foreground="White" Click="ShowGosumemory" Cursor="Hand" FontSize="24"
-            Grid.Row="1">
+                HorizontalAlignment="Left" Height="40" Margin="91,153,0,0" VerticalAlignment="Top" Width="168"
+                BorderBrush="White" Foreground="White" Click="ShowGosumemory" Cursor="Hand" FontSize="24"
+                Grid.Row="1">
             <Button.Background>
                 <SolidColorBrush Color="#7FFFFFFF" Opacity="0.5" />
             </Button.Background>

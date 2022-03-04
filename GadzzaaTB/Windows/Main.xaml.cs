@@ -41,13 +41,13 @@ namespace GadzzaaTB
 
         public string ChannelNameMain;
         public bool firsttime;
+        public GosumemoryPage gosup;
         public Integrations IntegP;
         public int iz = 0;
         public MainWindow MainA = Window.GetWindow(Application.Current.MainWindow) as MainWindow;
         public Osu_Page osup;
         public StreamCompanion StreamCP;
         public TwitchPage twitchp;
-        public GosumemoryPage gosup;
         public WebSocket ws = new WebSocket("ws://localhost:20727/tokens");
         public WebSocket ws2 = new WebSocket("ws://localhost:24050/ws");
 
@@ -78,7 +78,7 @@ namespace GadzzaaTB
             twitchp = new TwitchPage();
             osup = new Osu_Page();
             IntegP = new Integrations();
-            StreamCP = new StreamCompanion(); 
+            StreamCP = new StreamCompanion();
             gosup = new GosumemoryPage();
             bugReportp = new BugReport();
             ws.OnMessage += Ws_OnMessage;
@@ -89,7 +89,6 @@ namespace GadzzaaTB
             ws2.OnOpen += Ws2_OnOpen;
             ws2.OnClose += Ws2_OnClose;
             ws2.OnError += Ws2_OnError;
-            
         }
 
         private void Ws2_OnError(object sender, ErrorEventArgs e)
@@ -107,103 +106,137 @@ namespace GadzzaaTB
         private void Ws2_OnClose(object sender, CloseEventArgs e)
         {
             Console.Write("Websocket2 Closed!");
-
+            Task.Factory.StartNew(() =>
+            {
+                var op = main.Dispatcher.BeginInvoke((Action) (() =>
+                {
+                    {
+                        gosup.Status.Content = "Status: Offline";
+                        gosup.Status.Foreground = Brushes.Red;
+                        gosup.WebHook.Visibility = Visibility.Visible;
+                        gosup.DisconnectWebhookY.Visibility = Visibility.Hidden;
+                    }
+                }));
+            });
         }
 
         private void Ws2_OnOpen(object sender, EventArgs e)
         {
             Console.WriteLine("Connected to gosumemory Websocket!");
+            Task.Factory.StartNew(() =>
+            {
+                var op = main.Dispatcher.BeginInvoke((Action) (() =>
+                {
+                    {
+                        gosup.Status.Content = "Status: Online";
+                        gosup.Status.Foreground = Brushes.Green;
+                        gosup.WebHook.Visibility = Visibility.Hidden;
+                        gosup.DisconnectWebhookY.Visibility = Visibility.Visible;
+                    }
+                }));
+            });
         }
 
         private void Ws2_OnMessage(object sender, MessageEventArgs e)
         {
             if (!cache3.HasValues)
             {
-                cache3.Add("SR", JObject.Parse(e.Data).SelectToken("menu.bm.stats.fullSR"));
+                cache3.Add("mStars", JObject.Parse(e.Data).SelectToken("menu.bm.stats.fullSR"));
                 cache3.Add("artist", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.artist"));
-                cache3.Add("title", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.title")); 
+                cache3.Add("title", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.title"));
                 cache3.Add("mapper", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.mapper"));
-                cache3.Add("difficulty", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.difficulty"));
-                cache3.Add("str", JObject.Parse(e.Data).SelectToken("menu.mods.str"));
-                cache3.Add("id", JObject.Parse(e.Data).SelectToken("menu.bm.id"));
-                cache3.Add("ssPP", JObject.Parse(e.Data).SelectToken("menu.pp.100"));
-                cache3.Add("99pp", JObject.Parse(e.Data).SelectToken("menu.pp.99"));
-                cache3.Add("98pp", JObject.Parse(e.Data).SelectToken("menu.pp.98"));
-                cache3.Add("97pp", JObject.Parse(e.Data).SelectToken("menu.pp.97"));
-                cache3.Add("96pp", JObject.Parse(e.Data).SelectToken("menu.pp.96"));
-                cache3.Add("95pp", JObject.Parse(e.Data).SelectToken("menu.pp.95"));
+                cache3.Add("mapDiff", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.difficulty"));
+                cache3.Add("mods", JObject.Parse(e.Data).SelectToken("menu.mods.str"));
+                cache3.Add("dl", JObject.Parse(e.Data).SelectToken("menu.bm.id"));
+                cache3.Add("osu_mSSPP", JObject.Parse(e.Data).SelectToken("menu.pp.100"));
+                cache3.Add("osu_m99PP", JObject.Parse(e.Data).SelectToken("menu.pp.99"));
+                cache3.Add("osu_m98PP", JObject.Parse(e.Data).SelectToken("menu.pp.98"));
+                cache3.Add("osu_m97PP", JObject.Parse(e.Data).SelectToken("menu.pp.97"));
+                cache3.Add("osu_m96PP", JObject.Parse(e.Data).SelectToken("menu.pp.96"));
+                cache3.Add("osu_m95PP", JObject.Parse(e.Data).SelectToken("menu.pp.95"));
             }
             else
             {
-                if (cache3.GetValue("SR") != JObject.Parse(e.Data).SelectToken("menu.bm.stats.fullSR"))
+                if (cache3.GetValue("mStars") != JObject.Parse(e.Data).SelectToken("menu.bm.stats.fullSR"))
                 {
-                    cache3.Remove("SR");
-                    cache3.Add("SR", JObject.Parse(e.Data).SelectToken("menu.bm.stats.fullSR"));
+                    cache3.Remove("mStars");
+                    cache3.Add("mStars", JObject.Parse(e.Data).SelectToken("menu.bm.stats.fullSR"));
                 }
+
                 if (cache3.GetValue("artist") != JObject.Parse(e.Data).SelectToken("menu.bm.metadata.artist"))
                 {
                     cache3.Remove("artist");
                     cache3.Add("artist", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.artist"));
                 }
+
                 if (cache3.GetValue("title") != JObject.Parse(e.Data).SelectToken("menu.bm.metadata.title"))
                 {
                     cache3.Remove("title");
                     cache3.Add("title", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.title"));
                 }
+
                 if (cache3.GetValue("mapper") != JObject.Parse(e.Data).SelectToken("menu.bm.metadata.mapper"))
                 {
                     cache3.Remove("mapper");
                     cache3.Add("mapper", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.mapper"));
                 }
-                if (cache3.GetValue("difficulty") != JObject.Parse(e.Data).SelectToken("menu.bm.metadata.difficulty"))
+
+                if (cache3.GetValue("mapDiff") != JObject.Parse(e.Data).SelectToken("menu.bm.metadata.difficulty"))
                 {
-                    cache3.Remove("difficulty");
-                    cache3.Add("difficulty", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.difficulty"));
+                    cache3.Remove("mapDiff");
+                    cache3.Add("mapDiff", JObject.Parse(e.Data).SelectToken("menu.bm.metadata.difficulty"));
                 }
-                if (cache3.GetValue("str") != JObject.Parse(e.Data).SelectToken("menu.mods.str"))
+
+                if (cache3.GetValue("mods") != JObject.Parse(e.Data).SelectToken("menu.mods.str"))
                 {
-                    cache3.Remove("str");
-                    cache3.Add("str", JObject.Parse(e.Data).SelectToken("menu.mods.str"));
+                    cache3.Remove("mods");
+                    cache3.Add("mods", JObject.Parse(e.Data).SelectToken("menu.mods.str"));
                 }
-                if (cache3.GetValue("id") != JObject.Parse(e.Data).SelectToken("menu.bm.id"))
+
+                if (cache3.GetValue("dl") != JObject.Parse(e.Data).SelectToken("menu.bm.id"))
                 {
-                    cache3.Remove("id");
-                    cache3.Add("id", JObject.Parse(e.Data).SelectToken("menu.bm.id"));
+                    cache3.Remove("dl");
+                    cache3.Add("dl", JObject.Parse(e.Data).SelectToken("menu.bm.id"));
                 }
-                if (cache3.GetValue("ssPP") != JObject.Parse(e.Data).SelectToken("menu.pp.100"))
+
+                if (cache3.GetValue("osu_mSSPP") != JObject.Parse(e.Data).SelectToken("menu.pp.100"))
                 {
-                    cache3.Remove("ssPP");
-                    cache3.Add("ssPP", JObject.Parse(e.Data).SelectToken("menu.pp.100"));
+                    cache3.Remove("osu_mSSPP");
+                    cache3.Add("osu_mSSPP", JObject.Parse(e.Data).SelectToken("menu.pp.100"));
                 }
-                if (cache3.GetValue("99pp") != JObject.Parse(e.Data).SelectToken("menu.pp.99"))
+
+                if (cache3.GetValue("osu_m99PP") != JObject.Parse(e.Data).SelectToken("menu.pp.99"))
                 {
-                    cache3.Remove("99pp");
-                    cache3.Add("99pp", JObject.Parse(e.Data).SelectToken("menu.pp.99"));
+                    cache3.Remove("osu_m99PP");
+                    cache3.Add("osu_m99PP", JObject.Parse(e.Data).SelectToken("menu.pp.99"));
                 }
-                if (cache3.GetValue("98pp") != JObject.Parse(e.Data).SelectToken("menu.pp.98"))
+
+                if (cache3.GetValue("osu_m98PP") != JObject.Parse(e.Data).SelectToken("menu.pp.98"))
                 {
-                    cache3.Remove("98pp");
-                    cache3.Add("98pp", JObject.Parse(e.Data).SelectToken("menu.pp.98"));
+                    cache3.Remove("osu_m98PP");
+                    cache3.Add("osu_m98PP", JObject.Parse(e.Data).SelectToken("menu.pp.98"));
                 }
-                if (cache3.GetValue("97pp") != JObject.Parse(e.Data).SelectToken("menu.pp.97"))
+
+                if (cache3.GetValue("osu_m97PP") != JObject.Parse(e.Data).SelectToken("menu.pp.97"))
                 {
-                    cache3.Remove("97pp");
-                    cache3.Add("97pp", JObject.Parse(e.Data).SelectToken("menu.pp.97"));
+                    cache3.Remove("osu_m97PP");
+                    cache3.Add("osu_m97PP", JObject.Parse(e.Data).SelectToken("menu.pp.97"));
                 }
-                if (cache3.GetValue("96pp") != JObject.Parse(e.Data).SelectToken("menu.pp.96"))
+
+                if (cache3.GetValue("osu_m96PP") != JObject.Parse(e.Data).SelectToken("menu.pp.96"))
                 {
-                    cache3.Remove("96pp");
-                    cache3.Add("96pp", JObject.Parse(e.Data).SelectToken("menu.pp.96"));
+                    cache3.Remove("osu_m96PP");
+                    cache3.Add("osu_m96PP", JObject.Parse(e.Data).SelectToken("menu.pp.96"));
                 }
-                if (cache3.GetValue("95pp") != JObject.Parse(e.Data).SelectToken("menu.pp.95"))
+
+                if (cache3.GetValue("osu_m95PP") != JObject.Parse(e.Data).SelectToken("menu.pp.95"))
                 {
-                    cache3.Remove("95pp");
-                    cache3.Add("95pp", JObject.Parse(e.Data).SelectToken("menu.pp.95"));
+                    cache3.Remove("osu_m95PP");
+                    cache3.Add("osu_m95PP", JObject.Parse(e.Data).SelectToken("menu.pp.95"));
                 }
             }
 
             //Console.WriteLine(cache3);
-
         }
 
         private void Ws_OnError(object sender, ErrorEventArgs e)
@@ -380,6 +413,7 @@ namespace GadzzaaTB
         {
             public int i;
             public int i2;
+            public int i3;
             public string npppText;
             public string npText;
 
@@ -491,32 +525,63 @@ namespace GadzzaaTB
                     {
                         i = 0;
                         i2 = 0;
+                        i3 = 0;
                         npText = "";
                         foreach (var process in Process.GetProcessesByName("osu!StreamCompanion")) i = 1;
 
                         foreach (var process in Process.GetProcessesByName("osu!")) i2 = 1;
-                        if (i == 0)
-                            npText =
-                                "StreamCompanion is not running! Please start it manually from the integrations tab!";
-                        else if (i2 == 0)
+
+                        foreach (var process in Process.GetProcessesByName("gosumemory")) i3 = 1;
+
+                        if (i2 == 0)
                             npText = "osu! is not running! Please open the game before using the command!";
-                        else if (i == 1 && i2 == 1)
-                            if (cache2 != null && cache2.HasValues && firstMessageLoaded)
+                        else if (i2 == 1)
+                            if (i == 1)
                             {
-                                npText =
-                                    "Now Playing | " + decimal.Round((decimal) cache2.GetValue("mStars"), 2) + "⭐ | " +
-                                    cache2.GetValue("mapArtistTitle") + cache2.GetValue("mapDiff!") + " | Mods: " +
-                                    cache2.GetValue("mods") + " | Download: " + cache2.GetValue("dl");
+                                if (cache2 != null && cache2.HasValues && firstMessageLoaded)
+                                {
+                                    npText =
+                                        "Now Playing | " + decimal.Round((decimal) cache2.GetValue("mStars"), 2) +
+                                        "⭐ | " +
+                                        cache2.GetValue("mapArtistTitle") + " " + cache2.GetValue("mapDiff") +
+                                        " | Mods: " +
+                                        cache2.GetValue("mods") + " | Download: " + cache2.GetValue("dl");
+                                }
+                                else
+                                {
+                                    npText =
+                                        "Error on websocket, please try again the command | If you are still getting this error, please make sure StreamCompanion is online and ready to use!";
+                                    Console.WriteLine("Cache2: " + cache2);
+                                    Console.WriteLine("Cache2 Values?: " + cache2.HasValues);
+                                    Console.WriteLine("Cache2 FirstMessage?: " + firstMessageLoaded);
+                                    main.ws.Close();
+                                    main.ws.Connect();
+                                }
+                            }
+                            else if (i3 == 1)
+                            {
+                                if (cache3 != null && cache3.HasValues)
+                                {
+                                    npText =
+                                        "Now Playing | " + decimal.Round((decimal) cache3.GetValue("mStars"), 2) +
+                                        "⭐ | " +
+                                        cache3.GetValue("artist") + " - " + cache3.GetValue("title") + " [" +
+                                        cache3.GetValue("mapDiff") + "] | Mods: " +
+                                        cache3.GetValue("mods") + " | Download: https://osu.ppy.sh/b/" +
+                                        cache3.GetValue("dl");
+                                }
+                                else
+                                {
+                                    npText =
+                                        "Error on websocket, please try again the command | If you are still getting this error, please make sure gosumemory is online and ready to use!";
+                                    Console.WriteLine("Cache3: " + cache3);
+                                    Console.WriteLine("Cache3 Values?: " + cache3.HasValues);
+                                }
                             }
                             else
                             {
-                                npText =
-                                    "Error on websocket, please try again | If you are still getting this error, please make sure StreamCompanion is online and ready to use!";
-                                Console.WriteLine(cache2);
-                                Console.WriteLine(cache2.HasValues);
-                                Console.WriteLine(firstMessageLoaded);
-                                main.ws.Close();
-                                main.ws.Connect();
+                                npText=
+                                    "No integration is now running! Please start it manually from the integrations tab!";
                             }
 
                         client.SendMessage(e.ChatMessage.Channel, npText);
@@ -533,6 +598,7 @@ namespace GadzzaaTB
                         });
                         Console.WriteLine("i value for command1: " + i);
                         Console.WriteLine("i2 value for command1: " + i2);
+                        Console.WriteLine("i3 value for command1: " + i3);
                         Console.WriteLine("Command 1 text: " + npText);
                         Console.WriteLine("X Value: " + x);
                     }
@@ -540,37 +606,70 @@ namespace GadzzaaTB
                     {
                         i = 0;
                         i2 = 0;
+                        i3 = 0;
                         npppText = "";
                         foreach (var process in Process.GetProcessesByName("osu!StreamCompanion")) i = 1;
-
+                     
                         foreach (var process in Process.GetProcessesByName("osu!")) i2 = 1;
 
-                        if (i == 0)
-                            npppText =
-                                "StreamCompanion is not running! Please start it manually from the integrations tab!";
-                        else if (i2 == 0)
+                        foreach (var process in Process.GetProcessesByName("gosumemory")) i3 = 1;
+
+
+                        if (i2 == 0)
                             npppText = "osu! is not running! Please open the game before using the command!";
-                        else if (i == 1 && i2 == 1)
-                            if (cache2 != null && cache2.HasValues && firstMessageLoaded)
+                        else if (i2 == 1)
+                            if (i == 1)
                             {
-                                npppText =
-                                    "PP Values | 100 % : " + decimal.Round((decimal) cache2.GetValue("osu_mSSPP"), 2) +
-                                    " pp | 99 % : " +
-                                    decimal.Round((decimal) cache2.GetValue("osu_m99PP"), 2) + " pp | 98 % : " +
-                                    decimal.Round((decimal) cache2.GetValue("osu_m98PP"), 2) +
-                                    " pp | 97 % : " + decimal.Round((decimal) cache2.GetValue("osu_m97PP"), 2) +
-                                    " pp | 96 % : " +
-                                    decimal.Round((decimal) cache2.GetValue("osu_m96PP"), 2) + " pp | 95 % : " +
-                                    decimal.Round((decimal) cache2.GetValue("osu_m95PP"), 2) +
-                                    " pp | Download: " + cache2.GetValue("dl");
+                                if (cache2 != null && cache2.HasValues && firstMessageLoaded)
+                                {
+                                    npppText =
+                                        "PP Values | 100 % : " +
+                                        decimal.Round((decimal)cache2.GetValue("osu_mSSPP"), 2) +
+                                        " pp | 99 % : " +
+                                        decimal.Round((decimal)cache2.GetValue("osu_m99PP"), 2) + " pp | 98 % : " +
+                                        decimal.Round((decimal)cache2.GetValue("osu_m98PP"), 2) +
+                                        " pp | 97 % : " + decimal.Round((decimal)cache2.GetValue("osu_m97PP"), 2) +
+                                        " pp | 96 % : " +
+                                        decimal.Round((decimal)cache2.GetValue("osu_m96PP"), 2) + " pp | 95 % : " +
+                                        decimal.Round((decimal)cache2.GetValue("osu_m95PP"), 2) +
+                                        " pp | Download: " + cache2.GetValue("dl");
+                                }
+                                else
+                                {
+                                    npppText =
+                                        "Error on websocket, please try again the command | If you are still getting this error, please make sure StreamCompanion is online and ready to use!";
+                                    Console.WriteLine(cache2);
+                                    Console.WriteLine(cache2.HasValues);
+                                    Console.WriteLine(firstMessageLoaded);
+                                }
+                            }
+                            else if (i3 == 1)
+                            {
+                                if (cache3 != null && cache3.HasValues)
+                                {
+                                    npppText =
+                                        "PP Values | 100 % : " +
+                                        decimal.Round((decimal) cache3.GetValue("osu_mSSPP"), 2) +
+                                        " pp | 99 % : " +
+                                        decimal.Round((decimal) cache3.GetValue("osu_m99PP"), 2) + " pp | 98 % : " +
+                                        decimal.Round((decimal) cache3.GetValue("osu_m98PP"), 2) +
+                                        " pp | 97 % : " + decimal.Round((decimal) cache3.GetValue("osu_m97PP"), 2) +
+                                        " pp | 96 % : " +
+                                        decimal.Round((decimal) cache3.GetValue("osu_m96PP"), 2) + " pp | 95 % : " +
+                                        decimal.Round((decimal) cache3.GetValue("osu_m95PP"), 2) +
+                                        " pp | Download: https://osu.ppy.sh/b/" + cache3.GetValue("dl");
+                                }
+                                else
+                                {
+                                    npppText =
+                                        "Error on websocket, please try again the command | If you are still getting this error, please make sure gosumemory is online and ready to use!";
+                                    Console.WriteLine("Cache3: " + cache3);
+                                    Console.WriteLine("Cache3 Values?: " + cache3.HasValues);
+                                }
                             }
                             else
-                            {
-                                npppText = "Error on websocket";
-                                Console.WriteLine(cache2);
-                                Console.WriteLine(cache2.HasValues);
-                                Console.WriteLine(firstMessageLoaded);
-                            }
+                                npppText =
+                                    "No integration is now running! Please start it manually from the integrations tab!";
 
                         client.SendMessage(e.ChatMessage.Channel, npppText);
                         y = y + 1;
@@ -585,6 +684,7 @@ namespace GadzzaaTB
                         });
                         Console.WriteLine("i value for command2: " + i);
                         Console.WriteLine("i2 value for command2: " + i2);
+                        Console.WriteLine("i3 value for command2: " + i3);
                         Console.WriteLine("Command 2 text: " + npppText);
                         Console.WriteLine("Y Value: " + y);
                     }

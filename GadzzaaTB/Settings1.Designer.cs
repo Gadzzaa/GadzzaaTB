@@ -118,5 +118,29 @@ namespace GadzzaaTB {
                 this["FirstRun"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AutoStartG {
+            get {
+                return ((bool)(this["AutoStartG"]));
+            }
+            set {
+                this["AutoStartG"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Path\\To\\Gosumemory")]
+        public string LocationFolderG {
+            get {
+                return ((string)(this["LocationFolderG"]));
+            }
+            set {
+                this["LocationFolderG"] = value;
+            }
+        }
     }
 }

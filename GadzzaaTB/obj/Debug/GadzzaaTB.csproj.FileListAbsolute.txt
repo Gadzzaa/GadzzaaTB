@@ -123,5 +123,4 @@ C:\Users\Robert Popescu\Desktop\GadzzaaTB\GadzzaaTB\obj\Debug\Windows\BugReport.
 C:\Users\Robert Popescu\Desktop\GadzzaaTB\GadzzaaTB\obj\Debug\Windows\BugReport.baml
 C:\Users\Robert Popescu\Desktop\GadzzaaTB\GadzzaaTB\obj\Debug\GadzzaaTB.Passwords.resources
 C:\Users\Robert Popescu\Desktop\GadzzaaTB\GadzzaaTB\obj\Debug\Windows\GosumemoryPage.g.cs
-C:\Users\Robert Popescu\Desktop\GadzzaaTB\GadzzaaTB\obj\Debug\GadzzaaTB_MarkupCompile.lref
 C:\Users\Robert Popescu\Desktop\GadzzaaTB\GadzzaaTB\obj\Debug\Windows\GosumemoryPage.baml

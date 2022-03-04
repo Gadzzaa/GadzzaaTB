@@ -46,7 +46,7 @@ namespace GadzzaaTB.Windows
             Console.WriteLine("Bug Report Name: " + BugReportNameY);
             Console.WriteLine("Bug Report Description: " + BugReportDescriptionY);
             Console.WriteLine("Send Log?:" + SubmitLog);
-            var createIssue = new NewIssue(Environment.MachineName + "reported: " + BugReportNameY);
+            var createIssue = new NewIssue(Environment.MachineName + " reported: " + BugReportNameY);
             if (SubmitLog)
             {
                 MainWindow.Test();

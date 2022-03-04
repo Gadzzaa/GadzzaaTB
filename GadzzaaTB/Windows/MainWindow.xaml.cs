@@ -102,6 +102,7 @@ namespace GadzzaaTB
             Console.WriteLine("||||||||||||||||||||||||||||||||||");
             Test();
             foreach (var process in Process.GetProcessesByName("osu!StreamCompanion")) process.Kill();
+            foreach (var process in Process.GetProcessesByName("WindowsTerminal")) process.Kill();
             Settings1.Default.Save();
         }
 
