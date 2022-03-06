@@ -36,6 +36,18 @@ namespace GadzzaaTB
         public static JObject cache3 = new JObject();
         public static bool firstMessageLoaded;
         public static bool firstMessageLoaded2;
+
+        public string[] AccessNames =
+        {
+            "gadzzaa",
+            "howl_osu",
+            "akakikn",
+            "soju_okita",
+            "misterkeyz",
+            "raikouhou123",
+            "zexor_osu"
+        };
+
         public bool autoStartBot = Settings1.Default.AutoStartB;
         public BugReport bugReportp;
 
@@ -57,7 +69,6 @@ namespace GadzzaaTB
             //   INITIALIZING
             main = this;
             InitializeComponent();
-
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("|| SETTINGS ||");
@@ -580,7 +591,7 @@ namespace GadzzaaTB
                             }
                             else
                             {
-                                npText=
+                                npText =
                                     "No integration is now running! Please start it manually from the integrations tab!";
                             }
 
@@ -609,7 +620,7 @@ namespace GadzzaaTB
                         i3 = 0;
                         npppText = "";
                         foreach (var process in Process.GetProcessesByName("osu!StreamCompanion")) i = 1;
-                     
+
                         foreach (var process in Process.GetProcessesByName("osu!")) i2 = 1;
 
                         foreach (var process in Process.GetProcessesByName("gosumemory")) i3 = 1;
@@ -624,14 +635,14 @@ namespace GadzzaaTB
                                 {
                                     npppText =
                                         "PP Values | 100 % : " +
-                                        decimal.Round((decimal)cache2.GetValue("osu_mSSPP"), 2) +
+                                        decimal.Round((decimal) cache2.GetValue("osu_mSSPP"), 2) +
                                         " pp | 99 % : " +
-                                        decimal.Round((decimal)cache2.GetValue("osu_m99PP"), 2) + " pp | 98 % : " +
-                                        decimal.Round((decimal)cache2.GetValue("osu_m98PP"), 2) +
-                                        " pp | 97 % : " + decimal.Round((decimal)cache2.GetValue("osu_m97PP"), 2) +
+                                        decimal.Round((decimal) cache2.GetValue("osu_m99PP"), 2) + " pp | 98 % : " +
+                                        decimal.Round((decimal) cache2.GetValue("osu_m98PP"), 2) +
+                                        " pp | 97 % : " + decimal.Round((decimal) cache2.GetValue("osu_m97PP"), 2) +
                                         " pp | 96 % : " +
-                                        decimal.Round((decimal)cache2.GetValue("osu_m96PP"), 2) + " pp | 95 % : " +
-                                        decimal.Round((decimal)cache2.GetValue("osu_m95PP"), 2) +
+                                        decimal.Round((decimal) cache2.GetValue("osu_m96PP"), 2) + " pp | 95 % : " +
+                                        decimal.Round((decimal) cache2.GetValue("osu_m95PP"), 2) +
                                         " pp | Download: " + cache2.GetValue("dl");
                                 }
                                 else
@@ -668,8 +679,10 @@ namespace GadzzaaTB
                                 }
                             }
                             else
+                            {
                                 npppText =
                                     "No integration is now running! Please start it manually from the integrations tab!";
+                            }
 
                         client.SendMessage(e.ChatMessage.Channel, npppText);
                         y = y + 1;
@@ -725,48 +738,90 @@ namespace GadzzaaTB
                 }
                 else if (e.ChatMessage.Message.Equals("!verify"))
                 {
-                    if (e.ChatMessage.Channel == "gadzzaa".ToLower() || e.ChatMessage.Channel == "howl_osu".ToLower())
+                    if (e.ChatMessage.Channel == e.ChatMessage.Username)
                     {
-                        if (e.ChatMessage.Channel == e.ChatMessage.Username)
+                        for (var j = 0; j < main.AccessNames.Length; j++)
                         {
-                            client.SendMessage(e.ChatMessage.Channel, "Verification Process Completed!");
-                            Settings1.Default.isLinked = true;
-                            Console.WriteLine("Twitch Verified!");
-                            client.SendMessage(e.ChatMessage.Channel, "If you wish to unlink, type '!unverify' !");
-                            Task.Factory.StartNew(() =>
+                            if (j != main.AccessNames.Length - 1)
                             {
-                                var op = main.Dispatcher.BeginInvoke((Action) (() =>
+                                if (e.ChatMessage.Channel.ToLower() == main.AccessNames[j].ToLower())
                                 {
+                                    client.SendMessage(e.ChatMessage.Channel, "Verification Process Completed!");
+                                    Settings1.Default.isLinked = true;
+                                    Console.WriteLine("Twitch Verified!");
+                                    client.SendMessage(e.ChatMessage.Channel,
+                                        "If you wish to unlink, type '!unverify' !");
+                                    Task.Factory.StartNew(() =>
                                     {
-                                        main.twitchp.AutoStartBot.IsEnabled = true;
-                                        main.twitchp.ChannelNameY.IsEnabled = false;
-                                        main.twitchp.ConnectB.IsEnabled = true;
-                                        main.twitchp.StatusB.Content = "Status : OFFLINE";
-                                        main.twitchp.StatusB.Foreground = Brushes.Red;
+                                        var op = main.Dispatcher.BeginInvoke((Action) (() =>
+                                        {
+                                            {
+                                                main.twitchp.AutoStartBot.IsEnabled = true;
+                                                main.twitchp.ChannelNameY.IsEnabled = false;
+                                                main.twitchp.ConnectB.IsEnabled = true;
+                                                main.twitchp.StatusB.Content = "Status : OFFLINE";
+                                                main.twitchp.StatusB.Foreground = Brushes.Red;
+                                            }
+                                        }));
+                                    });
+                                    client.Disconnect();
+                                    break;
+                                }
+                            }
+                            else
+                            {
+                                if (e.ChatMessage.Channel.ToLower() == main.AccessNames[j].ToLower())
+                                {
+                                    if (e.ChatMessage.Channel == e.ChatMessage.Username)
+                                    {
+                                        client.SendMessage(e.ChatMessage.Channel, "Verification Process Completed!");
+                                        Settings1.Default.isLinked = true;
+                                        Console.WriteLine("Twitch Verified!");
+                                        client.SendMessage(e.ChatMessage.Channel,
+                                            "If you wish to unlink, type '!unverify' !");
+                                        Task.Factory.StartNew(() =>
+                                        {
+                                            var op = main.Dispatcher.BeginInvoke((Action) (() =>
+                                            {
+                                                {
+                                                    main.twitchp.AutoStartBot.IsEnabled = true;
+                                                    main.twitchp.ChannelNameY.IsEnabled = false;
+                                                    main.twitchp.ConnectB.IsEnabled = true;
+                                                    main.twitchp.StatusB.Content = "Status : OFFLINE";
+                                                    main.twitchp.StatusB.Foreground = Brushes.Red;
+                                                }
+                                            }));
+                                        });
+                                        client.Disconnect();
                                     }
-                                }));
-                            });
-                            client.Disconnect();
-                        }
-                        else
-                        {
-                            client.SendMessage(e.ChatMessage.Channel, "You are not eligible to use this command!");
-                            Console.WriteLine("Verification command acces denied");
+                                    else
+                                    {
+                                        client.SendMessage(e.ChatMessage.Channel,
+                                            "You are not eligible to use this command!");
+                                        Console.WriteLine("Verification command acces denied");
+                                    }
+                                }
+                                else
+                                {
+                                    client.SendMessage(e.ChatMessage.Channel, "Channel not whitelisted!");
+                                    Console.WriteLine("Verification command acces denied");
+                                    Task.Factory.StartNew(() =>
+                                    {
+                                        var op = main.Dispatcher.BeginInvoke((Action)(() =>
+                                        {
+                                            {
+                                                main.twitchp.ConnectB.IsEnabled = true;
+                                            }
+                                        }));
+                                    });
+                                }
+                            }
                         }
                     }
                     else
                     {
-                        client.SendMessage(e.ChatMessage.Channel, "Channel not whitelisted!");
+                        client.SendMessage(e.ChatMessage.Channel, "You are not eligible to use this command!");
                         Console.WriteLine("Verification command acces denied");
-                        Task.Factory.StartNew(() =>
-                        {
-                            var op = main.Dispatcher.BeginInvoke((Action) (() =>
-                            {
-                                {
-                                    main.twitchp.ConnectB.IsEnabled = true;
-                                }
-                            }));
-                        });
                     }
                 }
             }
