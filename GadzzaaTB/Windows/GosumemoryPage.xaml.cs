@@ -29,10 +29,10 @@ namespace GadzzaaTB.Windows
                 Main.main.ws2.ConnectAsync();
             }
 
-            if (Settings1.Default.LocationFolderG == @"C:\Path\To\Gosumemory")
+            if (!File.Exists(Settings1.Default.LocationFolderG + @"gosumemory.exe"))
             {
-                AutoStartGY.IsEnabled = false;
                 AutoStartGY.IsChecked = false;
+                AutoStartGY.IsEnabled = false;
             }
         }
 

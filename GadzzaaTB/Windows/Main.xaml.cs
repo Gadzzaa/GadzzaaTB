@@ -543,16 +543,17 @@ namespace GadzzaaTB
                         foreach (var process in Process.GetProcessesByName("osu!")) i2 = 1;
 
                         foreach (var process in Process.GetProcessesByName("gosumemory")) i3 = 1;
-
-                        if (i2 == 0)
-                            npText = "osu! is not running! Please open the game before using the command!";
-                        else if (i2 == 1)
+                        npText = "osu! is not running! Please open the game before using the command!";
+                        if (i2 == 1)
+                        {
+                            npText =
+                                "No integration is now running! Please start it manually from the integrations tab!";
                             if (i == 1)
                             {
                                 if (cache2 != null && cache2.HasValues && firstMessageLoaded)
                                 {
                                     npText =
-                                        "Now Playing | " + decimal.Round((decimal) cache2.GetValue("mStars"), 2) +
+                                        "Now Playing | " + decimal.Round((decimal)cache2.GetValue("mStars"), 2) +
                                         "⭐ | " +
                                         cache2.GetValue("mapArtistTitle") + " " + cache2.GetValue("mapDiff") +
                                         " | Mods: " +
@@ -574,7 +575,7 @@ namespace GadzzaaTB
                                 if (cache3 != null && cache3.HasValues)
                                 {
                                     npText =
-                                        "Now Playing | " + decimal.Round((decimal) cache3.GetValue("mStars"), 2) +
+                                        "Now Playing | " + decimal.Round((decimal)cache3.GetValue("mStars"), 2) +
                                         "⭐ | " +
                                         cache3.GetValue("artist") + " - " + cache3.GetValue("title") + " [" +
                                         cache3.GetValue("mapDiff") + "] | Mods: " +
@@ -589,11 +590,8 @@ namespace GadzzaaTB
                                     Console.WriteLine("Cache3 Values?: " + cache3.HasValues);
                                 }
                             }
-                            else
-                            {
-                                npText =
-                                    "No integration is now running! Please start it manually from the integrations tab!";
-                            }
+                        }
+
 
                         client.SendMessage(e.ChatMessage.Channel, npText);
 
@@ -624,25 +622,25 @@ namespace GadzzaaTB
                         foreach (var process in Process.GetProcessesByName("osu!")) i2 = 1;
 
                         foreach (var process in Process.GetProcessesByName("gosumemory")) i3 = 1;
-
-
-                        if (i2 == 0)
-                            npppText = "osu! is not running! Please open the game before using the command!";
-                        else if (i2 == 1)
+                        npppText = "osu! is not running! Please open the game before using the command!";
+                        if (i2 == 1)
+                        {
+                            npppText =
+                                "No integration is now running! Please start it manually from the integrations tab!";
                             if (i == 1)
                             {
                                 if (cache2 != null && cache2.HasValues && firstMessageLoaded)
                                 {
                                     npppText =
                                         "PP Values | 100 % : " +
-                                        decimal.Round((decimal) cache2.GetValue("osu_mSSPP"), 2) +
+                                        decimal.Round((decimal)cache2.GetValue("osu_mSSPP"), 2) +
                                         " pp | 99 % : " +
-                                        decimal.Round((decimal) cache2.GetValue("osu_m99PP"), 2) + " pp | 98 % : " +
-                                        decimal.Round((decimal) cache2.GetValue("osu_m98PP"), 2) +
-                                        " pp | 97 % : " + decimal.Round((decimal) cache2.GetValue("osu_m97PP"), 2) +
+                                        decimal.Round((decimal)cache2.GetValue("osu_m99PP"), 2) + " pp | 98 % : " +
+                                        decimal.Round((decimal)cache2.GetValue("osu_m98PP"), 2) +
+                                        " pp | 97 % : " + decimal.Round((decimal)cache2.GetValue("osu_m97PP"), 2) +
                                         " pp | 96 % : " +
-                                        decimal.Round((decimal) cache2.GetValue("osu_m96PP"), 2) + " pp | 95 % : " +
-                                        decimal.Round((decimal) cache2.GetValue("osu_m95PP"), 2) +
+                                        decimal.Round((decimal)cache2.GetValue("osu_m96PP"), 2) + " pp | 95 % : " +
+                                        decimal.Round((decimal)cache2.GetValue("osu_m95PP"), 2) +
                                         " pp | Download: " + cache2.GetValue("dl");
                                 }
                                 else
@@ -660,14 +658,14 @@ namespace GadzzaaTB
                                 {
                                     npppText =
                                         "PP Values | 100 % : " +
-                                        decimal.Round((decimal) cache3.GetValue("osu_mSSPP"), 2) +
+                                        decimal.Round((decimal)cache3.GetValue("osu_mSSPP"), 2) +
                                         " pp | 99 % : " +
-                                        decimal.Round((decimal) cache3.GetValue("osu_m99PP"), 2) + " pp | 98 % : " +
-                                        decimal.Round((decimal) cache3.GetValue("osu_m98PP"), 2) +
-                                        " pp | 97 % : " + decimal.Round((decimal) cache3.GetValue("osu_m97PP"), 2) +
+                                        decimal.Round((decimal)cache3.GetValue("osu_m99PP"), 2) + " pp | 98 % : " +
+                                        decimal.Round((decimal)cache3.GetValue("osu_m98PP"), 2) +
+                                        " pp | 97 % : " + decimal.Round((decimal)cache3.GetValue("osu_m97PP"), 2) +
                                         " pp | 96 % : " +
-                                        decimal.Round((decimal) cache3.GetValue("osu_m96PP"), 2) + " pp | 95 % : " +
-                                        decimal.Round((decimal) cache3.GetValue("osu_m95PP"), 2) +
+                                        decimal.Round((decimal)cache3.GetValue("osu_m96PP"), 2) + " pp | 95 % : " +
+                                        decimal.Round((decimal)cache3.GetValue("osu_m95PP"), 2) +
                                         " pp | Download: https://osu.ppy.sh/b/" + cache3.GetValue("dl");
                                 }
                                 else
@@ -678,11 +676,7 @@ namespace GadzzaaTB
                                     Console.WriteLine("Cache3 Values?: " + cache3.HasValues);
                                 }
                             }
-                            else
-                            {
-                                npppText =
-                                    "No integration is now running! Please start it manually from the integrations tab!";
-                            }
+                        }
 
                         client.SendMessage(e.ChatMessage.Channel, npppText);
                         y = y + 1;

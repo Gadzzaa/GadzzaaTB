@@ -39,20 +39,6 @@ namespace GadzzaaTB
                 if (File.Exists(locationFolder + @"\osu!StreamCompanion.exe"))
                 {
                     Start_SC();
-                    var i = 0;
-                    foreach (var process in Process.GetProcessesByName("osu!StreamCompanion")) i = 1;
-                    if (i == 0)
-                    {
-                        MessageBox.Show("StreamCompanion not running!", "Error!");
-                    }
-                    else
-                    {
-                        Main.main.ws.ConnectAsync();
-                        Status.Content = "Status: Online";
-                        Status.Foreground = Brushes.Green;
-                        StartWebSocket.Visibility = Visibility.Hidden;
-                        DisconnectSCWebsocket.Visibility = Visibility.Visible;
-                    }
                 }
                 else
                 {

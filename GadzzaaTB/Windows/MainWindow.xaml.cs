@@ -24,6 +24,11 @@ namespace GadzzaaTB
                     Settings1.Default.LocationFolder =
                         AppDomain.CurrentDomain.BaseDirectory + @"StreamCompanion";
                 else MessageBox.Show("Invalid install ! Please consider reinstalling the app!", "Error on startup!");
+            if (File.Exists(AppDomain.CurrentDomain.BaseDirectory +
+                            @"gosumemory\gosumemory.exe"))
+                Settings1.Default.LocationFolderG =
+                    AppDomain.CurrentDomain.BaseDirectory + @"gosumemory";
+            else MessageBox.Show("Invalid install ! Please consider reinstalling the app!", "Error on startup!");
             Settings1.Default.FirstRun = false;
             var path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) +
                        "\\GadzzaaTB\\logs\\" + DateTime.UtcNow.Year + "-" + DateTime.UtcNow.Month + "-" +
