@@ -23,12 +23,12 @@ namespace GadzzaaTB
                                 @"StreamCompanion\osu!StreamCompanion.exe"))
                     Settings1.Default.LocationFolder =
                         AppDomain.CurrentDomain.BaseDirectory + @"StreamCompanion";
-                else MessageBox.Show("Invalid install ! Please consider reinstalling the app!", "Error on startup!");
+            //    else MessageBox.Show("Invalid install ! Please consider reinstalling the app!", "Error on startup!");                    - REMOVE THESE
             if (File.Exists(AppDomain.CurrentDomain.BaseDirectory +
                             @"gosumemory\gosumemory.exe"))
                 Settings1.Default.LocationFolderG =
                     AppDomain.CurrentDomain.BaseDirectory + @"gosumemory";
-            else MessageBox.Show("Invalid install ! Please consider reinstalling the app!", "Error on startup!");
+            // else MessageBox.Show("Invalid install ! Please consider reinstalling the app!", "Error on startup!");                         - REMOVE THESE
             Settings1.Default.FirstRun = false;
             var path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) +
                        "\\GadzzaaTB\\logs\\" + DateTime.UtcNow.Year + "-" + DateTime.UtcNow.Month + "-" +
@@ -55,13 +55,10 @@ namespace GadzzaaTB
                 return;
             }
 
-            Console.SetOut(writer);
-            Console.WriteLine("||||||||| SYSTEM INFO |||||||||");
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("PC User Name : " + Environment.UserName);
-            Console.WriteLine("OS Version: " + getOSInfo());
-            Console.WriteLine("Machine Name: " + Environment.MachineName);
+            //Console.SetOut(writer); 
+
+
+            Console.WriteLine("||||||||| SYSTEM INFO |||||||||"); Console.WriteLine(); Console.WriteLine(); Console.WriteLine("PC User Name : " + Environment.UserName); Console.WriteLine("OS Version: " + getOSInfo()); Console.WriteLine("Machine Name: " + Environment.MachineName);
             var OStype = "";
             if (Environment.Is64BitOperatingSystem)
                 OStype = "64-Bit, ";
@@ -72,21 +69,15 @@ namespace GadzzaaTB
             var toalRam = GetTotalMemoryInBytes();
             var toal = Convert.ToDouble(toalRam / (1024 * 1024));
             var t = Convert.ToInt32(Math.Ceiling(toal / 1024).ToString());
-            Console.WriteLine("Memory: " + t + " GB");
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("|||||||||||||||||||||||||||||||");
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("||||||||| CONSOLE OUTPUT |||||||||");
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("Logging Started");
+            Console.WriteLine("Memory: " + t + " GB"); Console.WriteLine(); Console.WriteLine(); Console.WriteLine("|||||||||||||||||||||||||||||||"); Console.WriteLine();
+            Console.WriteLine(); Console.WriteLine(); Console.WriteLine("||||||||| CONSOLE OUTPUT |||||||||"); Console.WriteLine(); Console.WriteLine(); Console.WriteLine("Logging Started");
+
+
             InitializeComponent();
             MainW = new Main();
             Loaded += MyWindow_Loaded;
             Closed += MyWindow_Closed;
+
             AppDomain.CurrentDomain.ProcessExit += OnProcessExit;
         }
 
@@ -98,7 +89,7 @@ namespace GadzzaaTB
 
         private void MyWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            NavigationFrame1.NavigationService.Navigate(MainW);
+            NavigationFrame.NavigationService.Navigate(MainW);
         }
 
 

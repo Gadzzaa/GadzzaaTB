@@ -4,9 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="GadzzaaTB" Icon="../gadzzaa_Dq1_icon.ico" Height="350" Width="525" WindowStyle="SingleBorderWindow"
-        ResizeMode="CanMinimize" Background="White" Visibility="Visible">
-    <DockPanel>
-        <Frame x:Name="NavigationFrame1" NavigationUIVisibility="Hidden" />
-    </DockPanel>
+        Title="GadzzaaTB" Icon="../gadzzaa_Dq1_icon.ico" Height="350" Width="540" WindowStyle="SingleBorderWindow"
+        ResizeMode="CanMinimize" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center" 
+        VerticalContentAlignment="Center" FlowDirection="LeftToRight" 
+        FontFamily="{DynamicResource Righteous}" FontWeight="Normal" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/Untitled-3.png" Stretch="UniformToFill" TileMode="Tile"/>
+    </Window.Background>
+    <Grid Background="#3F000000">
+        <Frame x:Name="NavigationFrame" NavigationUIVisibility="Hidden"/>
+    </Grid>
 </Window>

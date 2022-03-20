@@ -288,15 +288,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Passwords.resx</DependentUpon>
     </Compile>
-    <Compile Include="Windows\GosumemoryPage.xaml.cs">
-      <DependentUpon>GosumemoryPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\Integrations.xaml.cs">
-      <DependentUpon>Integrations.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\Osu_Page.xaml.cs">
-      <DependentUpon>Osu_Page.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Windows\Main.xaml.cs">
       <DependentUpon>Main.xaml</DependentUpon>
     </Compile>
@@ -304,12 +295,6 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings1.settings</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\StreamCompanion.xaml.cs">
-      <DependentUpon>StreamCompanion.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\TwitchPage.xaml.cs">
-      <DependentUpon>TwitchPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ExceptionWindow\ExceptionWindow.xaml.cs">
       <DependentUpon>ExceptionWindow.xaml</DependentUpon>
@@ -321,14 +306,6 @@
     <Compile Include="Windows\UpdaterPage.xaml.cs">
       <DependentUpon>UpdaterPage.xaml</DependentUpon>
     </Compile>
-    <Page Include="Windows\GosumemoryPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\Integrations.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -341,19 +318,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Windows\Osu_Page.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Windows\Main.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\StreamCompanion.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\TwitchPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

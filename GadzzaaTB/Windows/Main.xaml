@@ -5,67 +5,90 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       mc:Ignorable="d"
       d:DesignHeight="350" d:DesignWidth="525"
-      Title="Main">
-
-    <Grid Visibility="Visible">
+      Title="Main" FontFamily="{StaticResource Righteous}" Foreground="White">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition Height="0*" />
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid.Background>
-            <ImageBrush ImageSource="../Images/Untitled-3.png" Stretch="None" />
-        </Grid.Background>
-        <TextBox HorizontalAlignment="Left" Height="286" Margin="-3,35,0,0" TextWrapping="Wrap" Text="BETA"
-                 VerticalAlignment="Top" Width="522" FontSize="200" TextAlignment="Center" Background="#19FFFFFF"
-                 Foreground="#FF787234" IsEnabled="False" />
-        <Rectangle HorizontalAlignment="Center" Height="35" VerticalAlignment="Top" Width="526" Fill="#7F000000"
-                   Margin="-3,0,2,0" />
-        <Label FontFamily="{StaticResource Righteous}" Content="GadzzaaTB" HorizontalAlignment="Center" Height="38"
-               VerticalAlignment="Top" Width="142" FontSize="25" RenderTransformOrigin="0.5,0.5" Foreground="#FF11DE00"
-               Margin="0">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform />
-                    <SkewTransform />
-                    <RotateTransform Angle="0.788" />
-                    <TranslateTransform />
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
-        <Button x:Name="Integrations" FontFamily="{StaticResource Righteous}" Content="Integrations"
-                HorizontalAlignment="Left" Height="40" Margin="40,0,0,-50" VerticalAlignment="Center" Width="200"
-                BorderBrush="White" Foreground="White" Click="Button_Click" Cursor="Hand" FontSize="24">
-            <Button.Background>
-                <SolidColorBrush Color="#7FFFFFFF" Opacity="0.5" />
-            </Button.Background>
-        </Button>
-        <Button x:Name="OsuBot" FontFamily="{StaticResource Righteous}" Content="Osu" Height="40" Margin="40,0,0,50"
-                BorderBrush="White" Foreground="White" Click="ShowOsuBot" Cursor="Hand" FontSize="24"
-                HorizontalAlignment="Left" Width="200" VerticalAlignment="Center">
-            <Button.Background>
-                <SolidColorBrush Color="#7FFFFFFF" Opacity="0.5" />
-            </Button.Background>
-        </Button>
-        <Button x:Name="Twitch" FontFamily="{StaticResource Righteous}" Content="Twitch" HorizontalAlignment="Right"
-                Height="40" Margin="0,0,40,50" VerticalAlignment="Center" Width="200" BorderBrush="White"
-                Foreground="White" Click="ShowTwitch" Cursor="Hand" FontSize="24">
-            <Button.Background>
-                <SolidColorBrush Color="#7FFFFFFF" Opacity="0.5" />
-            </Button.Background>
-        </Button>
-        <Button x:Name="Settings" FontFamily="{StaticResource Righteous}" Content="Settings"
-                HorizontalAlignment="Right" Height="40" Margin="0,0,40,-50" VerticalAlignment="Center" Width="200"
-                BorderBrush="White" Foreground="White" Cursor="Hand" FontSize="24">
-            <Button.Background>
-                <SolidColorBrush Color="#7FFFFFFF" Opacity="0.5" />
-            </Button.Background>
-        </Button>
-        <Button x:Name="BugReportBUtton" Content="Bug Report" HorizontalAlignment="Left" Height="25"
-                VerticalAlignment="Top" Width="75" BorderBrush="White" Foreground="White" Click="DaPula"
-                Cursor="Hand" Visibility="Visible">
-            <Button.Background>
-                <SolidColorBrush Color="#7FFFFFFF" Opacity="0.5" />
-            </Button.Background>
-        </Button>
+
+
+        <TextBlock Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"
+                   Text="GadzzaaTB"
+                   FontSize="25"/>
+
+
+        <TextBlock Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" Text="Integrations status:"
+                   FontSize="20"/>
+        <Button x:Name="StreamCompanionStatus"  Grid.Column="3"  Grid.Row="2" Content="StreamCompanion"
+                   HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" 
+                   FontSize="19" Margin="5,1,5,0" Foreground="IndianRed" Background="Transparent"
+                   BorderThickness="0" Click="StreamCompanionStatus_OnClick" Cursor="Hand"/>
+        <Button x:Name="GosumemoryStatus" Grid.Column="4" Grid.Row="2" Content="Gosumemory"
+                   HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" 
+                   FontSize="19" Margin="5,1,5,0" Foreground="IndianRed" Background="Transparent"
+                   BorderThickness="0" Click="GosumemoryStatus_Click" Cursor="Hand"/>
+        <TextBlock x:Name="RequestStatus" Grid.Column="3" Grid.Row="4" Text="Requests"
+                   TextAlignment="Center" VerticalAlignment="Center" FontSize="19" Margin="5,0,5,0"
+                   Foreground="Gray"/>
+        <Button x:Name="TwitchStatus" Grid.Column="4" Grid.Row="4" Content="Twitch"
+                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
+                VerticalAlignment="Center" FontSize="19" Margin="5,0,5,0"
+                Foreground="IndianRed" Background="Transparent" BorderThickness="0"
+                Cursor="Hand" Click="TwitchStatus_OnClick"/>
+
+
+
+        <DockPanel Grid.Column="3" Grid.Row ="5" Margin="10,25,10,5" >
+            <TextBox Text="!" FontSize="17" TextAlignment="Center" 
+                     BorderThickness="1,1,0,1" IsReadOnly="true"/>
+            <TextBox x:Name="npTextBox" Text ="np" MaxLength="4"
+                     TextAlignment="Center" FontSize="17"
+                     GotFocus="NpTextBox_OnGotFocus"
+                     LostFocus="NpTextBox_OnLostFocus" BorderThickness="0,1,1,1"/>
+        </DockPanel>
+        <DockPanel Grid.Column="3" Grid.Row ="6" Margin="10,5,10,5" >
+            <TextBox Text="!" FontSize="17" TextAlignment="Center" 
+                     BorderThickness="1,1,0,1" IsReadOnly="True"/>
+            <TextBox x:Name="npppTextBox"  Text ="nppp"
+                     TextAlignment="Center" FontSize="17" MaxLength="4"
+                     GotFocus="NpppTextBox_OnGotFocus"
+                     LostFocus="NpppTextBox_OnLostFocus" 
+                     BorderThickness="0,1,1,1"/>
+        </DockPanel>
+        <TextBlock Grid.Column="1" Grid.Row="5" TextAlignment="Left" VerticalAlignment="Center"
+            Text="Display now playing info:" FontSize="16" Margin="0,20,0,0"/>
+        <TextBlock Grid.Column="1" Grid.Row="6" TextAlignment="Left" VerticalAlignment="Center"
+                   Text="Display now playing PP info:" FontSize="14"/>
+        <TextBlock Grid.Column="1" Grid.Row="7" TextAlignment="Left" VerticalAlignment="Center"
+                   Text="Twitch Channel Name:" FontSize="16" Margin="0,20,0,0"/>
+        <TextBox x:Name="channelName" Grid.Column="3" Grid.Row="7" TextAlignment="Center" FontSize="17"
+                 Text="Channel Name" Margin="10,20,10,0" MaxWidth="154"
+                 GotFocus="ChannelName_OnGotFocus"
+                 LostFocus="ChannelName_OnLostFocus"/>
+        <StackPanel Grid.Column="4" Grid.Row="8" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <TextBlock TextAlignment="Center" FontSize="15">v.Beta</TextBlock>
+            <Button VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Bug Report" Cursor="Hand" Click="Button_Click"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+            <TextBlock TextAlignment="Center" FontSize="15">twitch.tv/gadzzaa</TextBlock>
+        </StackPanel>
     </Grid>
 </Page>
