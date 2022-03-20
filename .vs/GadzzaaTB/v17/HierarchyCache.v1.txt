@@ -9,17 +9,135 @@ i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaa
 i:{00000000-0000-0000-0000-000000000000}:GadzzaaTB
 ++Properties
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\properties\
+++References
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++bin
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\
+++ExceptionWindow
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\exceptionwindow\
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\exceptionwindow\
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\exceptionwindow\
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release2\exceptionwindow\
+++Fonts
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\fonts\
+++Images
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\images\
+++obj
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\
+++Windows
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release2\windows\
+++BugReport.xaml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\bugreport.xaml
+++BugReport.xaml.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\bugreport.xaml.cs
+++GosumemoryPage.xaml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\gosumemorypage.xaml
+++GosumemoryPage.xaml.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\gosumemorypage.xaml.cs
+++Integrations.xaml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\integrations.xaml
+++Integrations.xaml.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\integrations.xaml.cs
+++Main.xaml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\main.xaml
+++Main.xaml.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\main.xaml.cs
+++MainWindow.xaml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\mainwindow.xaml
+++MainWindow.xaml.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\mainwindow.xaml.cs
+++Osu_Page.xaml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\osu_page.xaml
+++Osu_Page.xaml.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\osu_page.xaml.cs
+++StreamCompanion.xaml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\streamcompanion.xaml
+++StreamCompanion.xaml.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\streamcompanion.xaml.cs
+++TwitchPage.xaml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\twitchpage.xaml
+++TwitchPage.xaml.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\twitchpage.xaml.cs
+++App.config
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\app.config
+++App.xaml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\app.xaml
+++App1.config
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\app1.config
+++gadzzaa_Dq1_icon.ico
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\gadzzaa_dq1_icon.ico
+++Logging.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\logging.cs
+++packages.config
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\packages.config
+++Passwords.resx
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\passwords.resx
+++Settings1.settings
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\settings1.settings
 ++AssemblyInfo.cs
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\properties\assemblyinfo.cs
 ++Resources.resx
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\properties\resources.resx
-++Resources.Designer.cs
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\properties\resources.designer.cs
-++References
+++JWT
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Bcl.AsyncInterfaces
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Build.Utilities.v4.0
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++Microsoft.CSharp
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Extensions.Configuration.CommandLine
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Extensions.Configuration.EnvironmentVariables
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Extensions.Configuration.FileExtensions
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Extensions.Configuration.Json
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Extensions.Configuration.UserSecrets
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Extensions.FileProviders.Abstractions
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Extensions.FileProviders.Physical
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Extensions.FileSystemGlobbing
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Extensions.Hosting
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Extensions.Hosting.Abstractions
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++Microsoft.Extensions.Logging.Abstractions
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Extensions.Logging.Configuration
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Extensions.Logging.Console
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Extensions.Logging.Debug
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Extensions.Logging.EventLog
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Extensions.Logging.EventSource
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Extensions.Options.ConfigurationExtensions
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.IdentityModel.JsonWebTokens
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.IdentityModel.Logging
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.IdentityModel.Tokens
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.VisualBasic
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.VisualBasic.Compatibility
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.VisualBasic.Compatibility.Data
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.VisualStudio.CodeCoverage.Shim
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Microsoft.Web.XmlTransform
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++Microsoft.WindowsAPICodePack
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
@@ -29,6 +147,12 @@ i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++Newtonsoft.Json
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++NuGet.Common
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++NuGet.Frameworks
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++Octokit
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++Ookii.Dialogs.Wpf
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++PresentationCore
@@ -37,7 +161,17 @@ i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++System
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Buffers
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.ComponentModel.Annotations
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++System.ComponentModel.Composition
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.ComponentModel.Composition.Registration
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.ComponentModel.DataAnnotations
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Configuration
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++System.Core
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
@@ -47,11 +181,27 @@ i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++System.Drawing
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.IdentityModel.Tokens.Jwt
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++System.IO
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.IO.Compression
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Memory
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++System.Net.Http
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Numerics
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Numerics.Vectors
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++System.Runtime
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Runtime.CompilerServices.Unsafe
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Runtime.InteropServices.RuntimeInformation
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Runtime.Serialization
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++System.Security
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
@@ -63,27 +213,21 @@ i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++System.Security.Cryptography.X509Certificates
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Text.Encodings.Web
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Text.Json
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Threading.Tasks.Extensions
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.ValueTuple
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
+++System.Web
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++System.Xaml
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++System.Xml
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
-++TwitchLib.Api
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
-++TwitchLib.Api.Core
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
-++TwitchLib.Api.Core.Enums
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
-++TwitchLib.Api.Core.Interfaces
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
-++TwitchLib.Api.Core.Models
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
-++TwitchLib.Api.Helix
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
-++TwitchLib.Api.Helix.Models
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
-++TwitchLib.Api.V5
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
-++TwitchLib.Api.V5.Models
+++System.Xml.Linq
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++TwitchLib.Client
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
@@ -93,132 +237,322 @@ i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++TwitchLib.Communication
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
-++TwitchLib.PubSub
+++websocket-sharp
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
 ++WindowsBase
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:
-++bin
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\
-++Fonts
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\fonts\
-++obj
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\
-++a.ico
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\a.ico
-++App.config
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\app.config
-++App.xaml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\app.xaml
-++Background copy.png
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\background copy.png
-++MainWindow.xaml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\mainwindow.xaml
-++MainWindow.xaml.cs
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\mainwindow.xaml.cs
-++minimap.png
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\minimap.png
-++minimize-window-512.png
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\minimize-window-512.png
-++minus.png
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\minus.png
-++packages.config
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\packages.config
-++Settings1.settings
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\settings1.settings
-++Untitled-3.png
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\untitled-3.png
-++x-png-35415.png
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\x-png-35415.png
 ++Debug
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\
+++Koko Ver
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\koko ver\
 ++Release
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\
+++Release2
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release2\
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release2\
+++ExceptionExtensions.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\exceptionwindow\exceptionextensions.cs
+++ExceptionWindow.xaml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\exceptionwindow\exceptionwindow.xaml
+++ExceptionWindowViewModel.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\exceptionwindow\exceptionwindowviewmodel.cs
+++GlobalExceptionHandlerBase.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\exceptionwindow\globalexceptionhandlerbase.cs
+++UnknownAppDomainException.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\exceptionwindow\unknownappdomainexception.cs
+++WindowExceptionHandler.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\exceptionwindow\windowexceptionhandler.cs
+++Background copy.png
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\images\background copy.png
+++Da.gif
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\images\da.gif
+++Da.mp4
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\images\da.mp4
+++gadzzaa_2021-January-01_2022-February-01.csv
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\images\gadzzaa_2021-january-01_2022-february-01.csv
+++minimap.png
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\images\minimap.png
+++minimize-window-512.png
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\images\minimize-window-512.png
+++minus.png
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\images\minus.png
+++Untitled-3.png
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\images\untitled-3.png
+++x-png-35415.png
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\images\x-png-35415.png
 ++App.xaml.cs
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\app.xaml.cs
+++Passwords.Designer.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\passwords.designer.cs
 ++Settings1.Designer.cs
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\settings1.designer.cs
+++Resources.Designer.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\properties\resources.designer.cs
+++GadzzaaTB.exe
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\gadzzaatb.exe
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\gadzzaatb.exe
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release2\gadzzaatb.exe
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\gadzzaatb.exe
+++GadzzaaTB.exe.config
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\gadzzaatb.exe.config
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\gadzzaatb.exe.config
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release2\gadzzaatb.exe.config
+++GadzzaaTB.pdb
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\gadzzaatb.pdb
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\gadzzaatb.pdb
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release2\gadzzaatb.pdb
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\gadzzaatb.pdb
+++JWT.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\jwt.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\jwt.dll
+++JWT.pdb
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\jwt.pdb
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\jwt.pdb
+++JWT.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\jwt.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\jwt.xml
+++Microsoft.Bcl.AsyncInterfaces.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.bcl.asyncinterfaces.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.bcl.asyncinterfaces.dll
+++Microsoft.Bcl.AsyncInterfaces.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.bcl.asyncinterfaces.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.bcl.asyncinterfaces.xml
+++Microsoft.Extensions.Configuration.CommandLine.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.configuration.commandline.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.configuration.commandline.dll
+++Microsoft.Extensions.Configuration.CommandLine.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.configuration.commandline.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.configuration.commandline.xml
+++Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.configuration.environmentvariables.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.configuration.environmentvariables.dll
+++Microsoft.Extensions.Configuration.EnvironmentVariables.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.configuration.environmentvariables.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.configuration.environmentvariables.xml
+++Microsoft.Extensions.Configuration.FileExtensions.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.configuration.fileextensions.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.configuration.fileextensions.dll
+++Microsoft.Extensions.Configuration.FileExtensions.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.configuration.fileextensions.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.configuration.fileextensions.xml
+++Microsoft.Extensions.Configuration.Json.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.configuration.json.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.configuration.json.dll
+++Microsoft.Extensions.Configuration.Json.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.configuration.json.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.configuration.json.xml
+++Microsoft.Extensions.Configuration.UserSecrets.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.configuration.usersecrets.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.configuration.usersecrets.dll
+++Microsoft.Extensions.Configuration.UserSecrets.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.configuration.usersecrets.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.configuration.usersecrets.xml
+++Microsoft.Extensions.FileProviders.Abstractions.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.fileproviders.abstractions.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.fileproviders.abstractions.dll
+++Microsoft.Extensions.FileProviders.Abstractions.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.fileproviders.abstractions.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.fileproviders.abstractions.xml
+++Microsoft.Extensions.FileProviders.Physical.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.fileproviders.physical.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.fileproviders.physical.dll
+++Microsoft.Extensions.FileProviders.Physical.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.fileproviders.physical.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.fileproviders.physical.xml
+++Microsoft.Extensions.FileSystemGlobbing.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.filesystemglobbing.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.filesystemglobbing.dll
+++Microsoft.Extensions.FileSystemGlobbing.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.filesystemglobbing.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.filesystemglobbing.xml
+++Microsoft.Extensions.Hosting.Abstractions.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.hosting.abstractions.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.hosting.abstractions.dll
+++Microsoft.Extensions.Hosting.Abstractions.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.hosting.abstractions.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.hosting.abstractions.xml
+++Microsoft.Extensions.Hosting.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.hosting.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.hosting.dll
+++Microsoft.Extensions.Hosting.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.hosting.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.hosting.xml
 ++Microsoft.Extensions.Logging.Abstractions.dll
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.logging.abstractions.dll
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.logging.abstractions.dll
 ++Microsoft.Extensions.Logging.Abstractions.xml
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.logging.abstractions.xml
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.logging.abstractions.xml
+++Microsoft.Extensions.Logging.Configuration.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.logging.configuration.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.logging.configuration.dll
+++Microsoft.Extensions.Logging.Configuration.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.logging.configuration.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.logging.configuration.xml
+++Microsoft.Extensions.Logging.Console.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.logging.console.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.logging.console.dll
+++Microsoft.Extensions.Logging.Console.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.logging.console.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.logging.console.xml
+++Microsoft.Extensions.Logging.Debug.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.logging.debug.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.logging.debug.dll
+++Microsoft.Extensions.Logging.Debug.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.logging.debug.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.logging.debug.xml
+++Microsoft.Extensions.Logging.EventLog.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.logging.eventlog.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.logging.eventlog.dll
+++Microsoft.Extensions.Logging.EventLog.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.logging.eventlog.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.logging.eventlog.xml
+++Microsoft.Extensions.Logging.EventSource.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.logging.eventsource.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.logging.eventsource.dll
+++Microsoft.Extensions.Logging.EventSource.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.logging.eventsource.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.logging.eventsource.xml
+++Microsoft.Extensions.Options.ConfigurationExtensions.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.options.configurationextensions.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.options.configurationextensions.dll
+++Microsoft.Extensions.Options.ConfigurationExtensions.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.extensions.options.configurationextensions.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.extensions.options.configurationextensions.xml
+++Microsoft.IdentityModel.JsonWebTokens.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.identitymodel.jsonwebtokens.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.identitymodel.jsonwebtokens.dll
+++Microsoft.IdentityModel.JsonWebTokens.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.identitymodel.jsonwebtokens.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.identitymodel.jsonwebtokens.xml
+++Microsoft.IdentityModel.Logging.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.identitymodel.logging.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.identitymodel.logging.dll
+++Microsoft.IdentityModel.Logging.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.identitymodel.logging.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.identitymodel.logging.xml
+++Microsoft.IdentityModel.Tokens.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.identitymodel.tokens.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.identitymodel.tokens.dll
+++Microsoft.IdentityModel.Tokens.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.identitymodel.tokens.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.identitymodel.tokens.xml
+++Microsoft.VisualStudio.CodeCoverage.Shim.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.visualstudio.codecoverage.shim.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.visualstudio.codecoverage.shim.dll
+++Microsoft.Web.XmlTransform.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.web.xmltransform.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.web.xmltransform.dll
+++Microsoft.Web.XmlTransform.pdb
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.web.xmltransform.pdb
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.web.xmltransform.pdb
 ++Microsoft.WindowsAPICodePack.dll
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.windowsapicodepack.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.windowsapicodepack.dll
 ++Microsoft.WindowsAPICodePack.Shell.dll
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.windowsapicodepack.shell.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.windowsapicodepack.shell.dll
 ++Microsoft.WindowsAPICodePack.Shell.xml
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.windowsapicodepack.shell.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.windowsapicodepack.shell.xml
 ++Microsoft.WindowsAPICodePack.xml
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\microsoft.windowsapicodepack.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\microsoft.windowsapicodepack.xml
 ++Newtonsoft.Json.dll
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\newtonsoft.json.dll
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\newtonsoft.json.dll
 ++Newtonsoft.Json.xml
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\newtonsoft.json.xml
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\newtonsoft.json.xml
+++NuGet.Common.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\nuget.common.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\nuget.common.dll
+++NuGet.Common.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\nuget.common.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\nuget.common.xml
+++NuGet.Frameworks.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\nuget.frameworks.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\nuget.frameworks.dll
+++NuGet.Frameworks.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\nuget.frameworks.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\nuget.frameworks.xml
+++Octokit.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\octokit.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\octokit.dll
+++Octokit.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\octokit.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\octokit.xml
 ++Ookii.Dialogs.Wpf.dll
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\ookii.dialogs.wpf.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\ookii.dialogs.wpf.dll
 ++Ookii.Dialogs.Wpf.pdb
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\ookii.dialogs.wpf.pdb
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\ookii.dialogs.wpf.pdb
 ++Ookii.Dialogs.Wpf.xml
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\ookii.dialogs.wpf.xml
-++TwitchLib.Api.Core.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.core.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.core.dll
-++TwitchLib.Api.Core.Enums.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.core.enums.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.core.enums.dll
-++TwitchLib.Api.Core.Enums.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.core.enums.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.core.enums.xml
-++TwitchLib.Api.Core.Interfaces.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.core.interfaces.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.core.interfaces.dll
-++TwitchLib.Api.Core.Interfaces.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.core.interfaces.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.core.interfaces.xml
-++TwitchLib.Api.Core.Models.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.core.models.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.core.models.dll
-++TwitchLib.Api.Core.Models.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.core.models.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.core.models.xml
-++TwitchLib.Api.Core.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.core.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.core.xml
-++TwitchLib.Api.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.dll
-++TwitchLib.Api.Helix.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.helix.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.helix.dll
-++TwitchLib.Api.Helix.Models.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.helix.models.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.helix.models.dll
-++TwitchLib.Api.Helix.Models.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.helix.models.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.helix.models.xml
-++TwitchLib.Api.Helix.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.helix.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.helix.xml
-++TwitchLib.Api.V5.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.v5.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.v5.dll
-++TwitchLib.Api.V5.Models.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.v5.models.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.v5.models.dll
-++TwitchLib.Api.V5.Models.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.v5.models.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.v5.models.xml
-++TwitchLib.Api.V5.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.v5.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.v5.xml
-++TwitchLib.Api.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.api.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.api.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\ookii.dialogs.wpf.xml
+++System.Buffers.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.buffers.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.buffers.dll
+++System.Buffers.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.buffers.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.buffers.xml
+++System.ComponentModel.Annotations.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.componentmodel.annotations.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.componentmodel.annotations.dll
+++System.Diagnostics.DiagnosticSource.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.diagnostics.diagnosticsource.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.diagnostics.diagnosticsource.dll
+++System.IdentityModel.Tokens.Jwt.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.identitymodel.tokens.jwt.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.identitymodel.tokens.jwt.dll
+++System.IdentityModel.Tokens.Jwt.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.identitymodel.tokens.jwt.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.identitymodel.tokens.jwt.xml
+++System.Memory.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.memory.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.memory.dll
+++System.Memory.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.memory.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.memory.xml
+++System.Numerics.Vectors.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.numerics.vectors.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.numerics.vectors.dll
+++System.Numerics.Vectors.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.numerics.vectors.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.numerics.vectors.xml
+++System.Runtime.CompilerServices.Unsafe.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.runtime.compilerservices.unsafe.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.runtime.compilerservices.unsafe.dll
+++System.Runtime.CompilerServices.Unsafe.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.runtime.compilerservices.unsafe.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.runtime.compilerservices.unsafe.xml
+++System.Text.Encodings.Web.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.text.encodings.web.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.text.encodings.web.dll
+++System.Text.Encodings.Web.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.text.encodings.web.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.text.encodings.web.xml
+++System.Text.Json.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.text.json.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.text.json.dll
+++System.Text.Json.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.text.json.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.text.json.xml
+++System.Threading.Tasks.Extensions.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.threading.tasks.extensions.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.threading.tasks.extensions.dll
+++System.Threading.Tasks.Extensions.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.threading.tasks.extensions.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.threading.tasks.extensions.xml
+++System.ValueTuple.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.valuetuple.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.valuetuple.dll
+++System.ValueTuple.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\system.valuetuple.xml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\system.valuetuple.xml
 ++TwitchLib.Client.dll
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.client.dll
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.client.dll
@@ -240,36 +574,101 @@ i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaa
 ++TwitchLib.Communication.dll
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.communication.dll
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.communication.dll
-++TwitchLib.PubSub.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.pubsub.dll
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.pubsub.dll
-++TwitchLib.PubSub.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\twitchlib.pubsub.xml
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\twitchlib.pubsub.xml
+++websocket-sharp.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\websocket-sharp.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\websocket-sharp.dll
 ++WpfApplication1.exe
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\wpfapplication1.exe
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\wpfapplication1.exe
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\wpfapplication1.exe
 ++WpfApplication1.exe.config
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\wpfapplication1.exe.config
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\wpfapplication1.exe.config
 ++WpfApplication1.pdb
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\wpfapplication1.pdb
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\release\wpfapplication1.pdb
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\wpfapplication1.pdb
+++ExceptionWindow.xaml.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\exceptionwindow\exceptionwindow.xaml.cs
 ++.NETFramework,Version=v4.8.AssemblyAttributes.cs
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\.netframework,version=v4.8.assemblyattributes.cs
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\.netframework,version=v4.8.assemblyattributes.cs
-++App.g.i.cs
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\app.g.i.cs
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\app.g.i.cs
-++MainWindow.g.i.cs
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\mainwindow.g.i.cs
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\mainwindow.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release2\.netframework,version=v4.8.assemblyattributes.cs
 ++App.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\app.g.cs
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\app.g.cs
-++MainWindow.g.cs
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\mainwindow.g.cs
+++GadzzaaTB_Content.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\gadzzaatb_content.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\gadzzaatb_content.g.cs
+++TempPE
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\temppe\
+++App.baml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\app.baml
+++App.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\app.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release2\app.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\app.g.i.cs
+++DesignTimeResolveAssemblyReferences.cache
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\designtimeresolveassemblyreferences.cache
+++DesignTimeResolveAssemblyReferencesInput.cache
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\designtimeresolveassemblyreferencesinput.cache
+++GadzzaaTB.csproj.AssemblyReference.cache
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\gadzzaatb.csproj.assemblyreference.cache
+++GadzzaaTB.csproj.CopyComplete
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\gadzzaatb.csproj.copycomplete
+++GadzzaaTB.csproj.CoreCompileInputs.cache
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\gadzzaatb.csproj.corecompileinputs.cache
+++GadzzaaTB.csproj.FileListAbsolute.txt
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\gadzzaatb.csproj.filelistabsolute.txt
+++GadzzaaTB.csproj.GenerateResource.cache
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\gadzzaatb.csproj.generateresource.cache
+++GadzzaaTB.csproj.SuggestedBindingRedirects.cache
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\gadzzaatb.csproj.suggestedbindingredirects.cache
+++GadzzaaTB.g.resources
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\gadzzaatb.g.resources
+++GadzzaaTB.Passwords.resources
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\gadzzaatb.passwords.resources
+++GadzzaaTB.Properties.Resources.resources
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\gadzzaatb.properties.resources.resources
+++GadzzaaTB_Content.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\gadzzaatb_content.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release2\gadzzaatb_content.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\gadzzaatb_content.g.i.cs
+++GadzzaaTB_MarkupCompile.cache
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\gadzzaatb_markupcompile.cache
+++GadzzaaTB_MarkupCompile.i.cache
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\gadzzaatb_markupcompile.i.cache
+++GadzzaaTB_MarkupCompile.lref
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\gadzzaatb_markupcompile.lref
+++Integrations.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\integrations.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\integrations.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release2\windows\integrations.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\integrations.g.i.cs
+++Main.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\main.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\main.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release2\windows\main.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\main.g.i.cs
+++MainWindow.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\mainwindow.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\mainwindow.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release2\windows\mainwindow.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\mainwindow.g.i.cs
+++Osu_Page.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\osu_page.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\osu_page.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release2\windows\osu_page.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\osu_page.g.i.cs
+++Page1.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\page1.g.i.cs
+++StreamCompanion.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\streamcompanion.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\streamcompanion.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release2\windows\streamcompanion.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\streamcompanion.g.i.cs
+++TwitchPage.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\twitchpage.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\twitchpage.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release2\windows\twitchpage.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\twitchpage.g.i.cs
 ++WpfApplication1.csproj.AssemblyReference.cache
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\wpfapplication1.csproj.assemblyreference.cache
 ++WpfApplication1.csproj.CopyComplete
@@ -290,9 +689,69 @@ i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaa
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\wpfapplication1_markupcompile.cache
 ++WpfApplication1_MarkupCompile.lref
 i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\wpfapplication1_markupcompile.lref
-++GadzzaaTB.exe
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\gadzzaatb.exe
-++GadzzaaTB.exe.config
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\gadzzaatb.exe.config
-++GadzzaaTB.pdb
-i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\bin\debug\gadzzaatb.pdb
+++ExceptionWindow.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\exceptionwindow\exceptionwindow.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\exceptionwindow\exceptionwindow.g.cs
+++BugReport.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\bugreport.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\bugreport.g.cs
+++GosumemoryPage.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\gosumemorypage.g.cs
+++Integrations.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\integrations.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\integrations.g.cs
+++Main.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\main.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\main.g.cs
+++MainWindow.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\mainwindow.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\mainwindow.g.cs
+++Osu_Page.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\osu_page.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\osu_page.g.cs
+++StreamCompanion.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\streamcompanion.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\streamcompanion.g.cs
+++TwitchPage.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\twitchpage.g.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\twitchpage.g.cs
+++ExceptionWindow.baml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\exceptionwindow\exceptionwindow.baml
+++ExceptionWindow.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\exceptionwindow\exceptionwindow.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release2\exceptionwindow\exceptionwindow.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\exceptionwindow\exceptionwindow.g.i.cs
+++Passwords.Designer.cs.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\temppe\passwords.designer.cs.dll
+++Properties.Resources.Designer.cs.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\temppe\properties.resources.designer.cs.dll
+++Resource1.Designer.cs.dll
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\temppe\resource1.designer.cs.dll
+++BugReport.baml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\bugreport.baml
+++BugReport.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\bugreport.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release2\windows\bugreport.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\bugreport.g.i.cs
+++Integrations.baml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\integrations.baml
+++Main.baml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\main.baml
+++MainWindow.baml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\mainwindow.baml
+++Osu_Page.baml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\osu_page.baml
+++StreamCompanion.baml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\streamcompanion.baml
+++TwitchPage.baml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release\windows\twitchpage.baml
+++GosumemoryPage.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\release2\windows\gosumemorypage.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\gosumemorypage.g.i.cs
+++AutoUpdater.cs
+++UpdaterPage.xaml
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\updaterpage.xaml
+++UpdaterPage.xaml.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\windows\updaterpage.xaml.cs
+++UpdaterPage.g.i.cs
+i:{5393cc5a-dfd6-4158-b2e9-29b9c2c725e8}:c:\users\robert popescu\desktop\gadzzaatb\gadzzaatb\obj\debug\windows\updaterpage.g.i.cs

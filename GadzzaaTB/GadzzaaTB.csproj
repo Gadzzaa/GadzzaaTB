@@ -318,6 +318,9 @@
     <Compile Include="Windows\BugReport.xaml.cs">
       <DependentUpon>BugReport.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\UpdaterPage.xaml.cs">
+      <DependentUpon>UpdaterPage.xaml</DependentUpon>
+    </Compile>
     <Page Include="Windows\GosumemoryPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -359,6 +362,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\BugReport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\UpdaterPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
