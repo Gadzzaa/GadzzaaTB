@@ -8,12 +8,6 @@
     <Setting Name="LocationFolder" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\Path\To\StreamCompanion</Value>
     </Setting>
-    <Setting Name="AutoStart" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
-    <Setting Name="AutoStartB" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
     <Setting Name="isLinked" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
@@ -23,14 +17,11 @@
     <Setting Name="Command2" Type="System.String" Scope="User">
       <Value Profile="(Default)">!nppp</Value>
     </Setting>
-    <Setting Name="FirstRun" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
-    </Setting>
-    <Setting Name="AutoStartG" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
     <Setting Name="LocationFolderG" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\Path\To\Gosumemory</Value>
+    </Setting>
+    <Setting Name="FirstRun" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

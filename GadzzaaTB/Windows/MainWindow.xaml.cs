@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.Windows;
+using GadzzaaTB.Windows;
 using Microsoft.VisualBasic.Devices;
 
 namespace GadzzaaTB
@@ -13,6 +14,7 @@ namespace GadzzaaTB
         public static TextWriter oldOut = Console.Out;
         public bool isClosing;
         public Main MainW;
+        public UpdaterPage updatePage;
         private StackTrace stackTrace = new StackTrace();
 
 
@@ -23,12 +25,12 @@ namespace GadzzaaTB
                                 @"StreamCompanion\osu!StreamCompanion.exe"))
                     Settings1.Default.LocationFolder =
                         AppDomain.CurrentDomain.BaseDirectory + @"StreamCompanion";
-            //    else MessageBox.Show("Invalid install ! Please consider reinstalling the app!", "Error on startup!");                    - REMOVE THESE
+                else MessageBox.Show("Invalid install ! Please consider reinstalling the app!", "Error on startup!");                  
             if (File.Exists(AppDomain.CurrentDomain.BaseDirectory +
                             @"gosumemory\gosumemory.exe"))
                 Settings1.Default.LocationFolderG =
                     AppDomain.CurrentDomain.BaseDirectory + @"gosumemory";
-            // else MessageBox.Show("Invalid install ! Please consider reinstalling the app!", "Error on startup!");                         - REMOVE THESE
+             else MessageBox.Show("Invalid install ! Please consider reinstalling the app!", "Error on startup!");                        
             Settings1.Default.FirstRun = false;
             var path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) +
                        "\\GadzzaaTB\\logs\\" + DateTime.UtcNow.Year + "-" + DateTime.UtcNow.Month + "-" +
@@ -55,7 +57,7 @@ namespace GadzzaaTB
                 return;
             }
 
-            //Console.SetOut(writer); 
+            Console.SetOut(writer); 
 
 
             Console.WriteLine("||||||||| SYSTEM INFO |||||||||"); Console.WriteLine(); Console.WriteLine(); Console.WriteLine("PC User Name : " + Environment.UserName); Console.WriteLine("OS Version: " + getOSInfo()); Console.WriteLine("Machine Name: " + Environment.MachineName);
@@ -75,6 +77,7 @@ namespace GadzzaaTB
 
             InitializeComponent();
             MainW = new Main();
+            updatePage = new UpdaterPage();
             Loaded += MyWindow_Loaded;
             Closed += MyWindow_Closed;
 

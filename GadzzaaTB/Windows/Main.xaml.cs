@@ -54,15 +54,13 @@ namespace GadzzaaTB
             "zexor_osu"
         };
 
-        public bool autoStartBot = Settings1.Default.AutoStartB;
         public BugReport bugReportp;
-
-        public string ChannelNameMain = Settings1.Default.ChannelName;
 
         public static bool firstMessageLoaded;
         public bool streamCompanionStatus=false;
         public bool gosumemoryStatus=false;
         public bool firstTime = true;
+        public bool firstTime2 = true;
 
 
         public Main()
@@ -70,15 +68,16 @@ namespace GadzzaaTB
             main = this;
             InitializeComponent();
             Console.WriteLine(); Console.WriteLine(); Console.WriteLine("|| SETTINGS ||");Console.WriteLine("Command 1: " + Settings1.Default.Command1);Console.WriteLine("Command 2: " + Settings1.Default.Command2);
-            Console.WriteLine("Auto Start SC: " + Settings1.Default.AutoStart);Console.WriteLine("Twitch Bot Auto Start: " + Settings1.Default.AutoStartB); Console.WriteLine("Channel Name: " + Settings1.Default.ChannelName);
+            ; Console.WriteLine("Channel Name: " + Settings1.Default.ChannelName);
             Console.WriteLine("Location Folder SC: " + Settings1.Default.LocationFolder); Console.WriteLine("Account linked : " + Settings1.Default.isLinked); Console.WriteLine("||||||||||||||"); Console.WriteLine(); Console.WriteLine();
 
             channelName.Text = Settings1.Default.ChannelName;
+            firstTime = false;
+            TwitchStatus.Foreground = Brushes.Yellow;
+            if (Settings1.Default.isLinked) TwitchStatus.Foreground = Brushes.IndianRed;
             npTextBox.Text = Settings1.Default.Command1.TrimStart(new char[] { '!' });
             npppTextBox.Text = Settings1.Default.Command2.TrimStart(new char[] {'!'});
             
-            if (!Settings1.Default.isLinked) TwitchStatus.Foreground = Brushes.Yellow;
-
             bugReportp = new BugReport();
 
             ws.OnMessage += Ws_OnMessage;
@@ -90,10 +89,13 @@ namespace GadzzaaTB
             ws2.OnOpen += Ws2_OnOpen;
             ws2.OnClose += Ws2_OnClose;
             ws2.OnError += Ws2_OnError;
+            gotResponse();
+
         }
 
         private void StreamCompanionStatus_OnClick(object sender, RoutedEventArgs e)
         {
+            waitingForResponse();
             if (streamCompanionStatus)
             {
                 ws.Close();
@@ -101,16 +103,18 @@ namespace GadzzaaTB
                 Console.WriteLine("Stopping SC");
             }else
             {
-                foreach (var process in Process.GetProcessesByName("osu!StreamCompanion")) process.Kill(); 
-                Process.Start(@"C:\Users\Robert Popescu\Desktop\StreamCompanion-portable" + @"\osu!StreamCompanion.exe");
+                foreach (var process in Process.GetProcessesByName("osu!StreamCompanion")) process.Kill();
+                Process.Start(AppDomain.CurrentDomain.BaseDirectory + @"\StreamCompanion\osu!StreamCompanion.exe");
                 Thread.Sleep(1000);
-                ws.Connect();
+                ws.ConnectAsync();
                 Console.WriteLine("Starting SC");
             }
         }
 
         private void GosumemoryStatus_Click(object sender, RoutedEventArgs e)
         {
+            waitingForResponse();
+
             if (gosumemoryStatus)
             {
                 ws2.Close();
@@ -120,10 +124,11 @@ namespace GadzzaaTB
             else
             {
                 foreach (var process in Process.GetProcessesByName("WindowsTerminal")) process.Kill();
-                Process.Start(@"C:\Users\Robert Popescu\Desktop\gosumemory" + @"\gosumemory.exe");
+                Process.Start(AppDomain.CurrentDomain.BaseDirectory+@"\gosumemory\gosumemory.exe");
                 Thread.Sleep(1000);
-                ws2.Connect();
+                ws2.ConnectAsync();
                 Console.WriteLine("Starting Gosumemory");
+
             }
         }
 
@@ -152,13 +157,15 @@ namespace GadzzaaTB
 
         private void TwitchStatus_OnClick(object sender, RoutedEventArgs e)
         {
+            waitingForResponse();
             if (ConnectedB)
             {
                 client.Disconnect();
-                firstTime = false;
+                firstTime2 = false;
             }
             else
-            ActivateBot();
+            if(firstTime2) ActivateBot();
+            if (!firstTime2) client.Reconnect();
         }
 
         private void ChannelName_OnGotFocus(object sender, RoutedEventArgs e)
@@ -171,9 +178,25 @@ namespace GadzzaaTB
             if (channelName.Text == "") channelName.Undo();
             else Settings1.Default.ChannelName = channelName.Text;
         }
+        private void channelName_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            if (firstTime) return;
+            client.Disconnect();
+            Settings1.Default.isLinked = false;
+            Task.Factory.StartNew(() =>
+            {
+                var op = main.Dispatcher.BeginInvoke((Action)(() =>
+                {
+                    {
+                        main.TwitchStatus.Foreground = Brushes.Yellow;
+                    }
+                }));
+            });
+        }
 
         public static void ActivateBot()
         {
+            main.waitingForResponse();
             Console.WriteLine("Activate Bot Request Sent !");
             var bot = new Bot();
             Console.ReadLine();
@@ -222,6 +245,7 @@ namespace GadzzaaTB
                 client.OnIncorrectLogin += Client_IncorrectLogin;
 
                 client.Connect();
+                main.gotResponse();
                 Console.WriteLine("Client Request 2 Sent");
             }
 
@@ -277,6 +301,7 @@ namespace GadzzaaTB
                         }
                     }));
                 });
+                main.gotResponse();
             }
 
             private void Client_OnMessageReceived(object sender, OnMessageReceivedArgs e)
@@ -440,30 +465,11 @@ namespace GadzzaaTB
                         Console.WriteLine("Command 2 text: " + npppText);
                         Console.WriteLine("Y Value: " + y);
                     }
-                    else if (e.ChatMessage.Message.Equals("!unverify"))
-                    {
-                        if (e.ChatMessage.Username == e.ChatMessage.Channel)
-                        {
-                            client.SendMessage(e.ChatMessage.Channel, "Account unlinked!");
-                            Console.WriteLine("Account Unlinked!");
-                            Settings1.Default.isLinked = false;
-                            Task.Factory.StartNew(() =>
-                            {
-                                var op = main.Dispatcher.BeginInvoke((Action)(() =>
-                                {
-                                    {
-                                        main.TwitchStatus.Foreground = Brushes.Yellow;
-                                    }
-                                }));
-                            });
-                            client.Disconnect();
-                        }
-                    }
                     else if (e.ChatMessage.Message.Equals("!commands"))
                     {
                         client.SendMessage(e.ChatMessage.Channel,
                             "!" + Settings1.Default.Command1 + ", !" + Settings1.Default.Command2 +
-                            ", !verify, !unverify, !commands");
+                            ", !commands");
                         Console.WriteLine("!commands sent");
                     }
                 }
@@ -548,6 +554,8 @@ namespace GadzzaaTB
 
         private void Ws2_OnClose(object sender, CloseEventArgs e)
         {
+            main.gotResponse();
+
             Console.Write("Websocket2 Closed!");
             Task.Factory.StartNew(() =>
             {
@@ -563,6 +571,8 @@ namespace GadzzaaTB
 
         private void Ws2_OnOpen(object sender, EventArgs e)
         {
+            main.gotResponse();
+
             Console.WriteLine("Connected to gosumemory Websocket!");
             Task.Factory.StartNew(() =>
             {
@@ -701,6 +711,8 @@ namespace GadzzaaTB
 
         private void Ws_OnClose(object sender, CloseEventArgs e)
         {
+            main.gotResponse();
+
             Console.Write("Websocket Closed!");
             Task.Factory.StartNew(() =>
             {
@@ -716,6 +728,8 @@ namespace GadzzaaTB
 
         private void Ws_OnOpen(object sender, EventArgs e)
         {
+            main.gotResponse();
+
             var data = new[]
             {
                 "mStars",
@@ -759,6 +773,36 @@ namespace GadzzaaTB
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             bugReportp.Show();
+        }
+        
+        private void waitingForResponse()
+        {
+            Task.Factory.StartNew(() =>
+            {
+                var op = main.Dispatcher.BeginInvoke((Action)(() =>
+                {
+                    {
+                        transparentNegru.Visibility = Visibility.Visible;
+                        pleaseWait.Visibility = Visibility.Visible;
+                        mainGrid.IsEnabled = false;
+                    }
+                }));
+            });
+        }
+
+        private void gotResponse()
+        {
+            Task.Factory.StartNew(() =>
+            {
+                var op = main.Dispatcher.BeginInvoke((Action)(() =>
+                {
+                    {
+                        transparentNegru.Visibility = Visibility.Hidden;
+                        pleaseWait.Visibility = Visibility.Hidden;
+                        mainGrid.IsEnabled = true;
+                    }
+                }));
+            });
         }
     }
 }
