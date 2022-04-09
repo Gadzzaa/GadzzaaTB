@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media;
 using GadzzaaTB.Windows;
+using Microsoft.VisualBasic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using TwitchLib.Client;
@@ -79,6 +80,7 @@ namespace GadzzaaTB
             npppTextBox.Text = Settings1.Default.Command2.TrimStart(new char[] {'!'});
             
             bugReportp = new BugReport();
+            bugReportp.Close();
 
             ws.OnMessage += Ws_OnMessage;
             ws.OnOpen += Ws_OnOpen;
@@ -124,7 +126,7 @@ namespace GadzzaaTB
             else
             {
                 foreach (var process in Process.GetProcessesByName("WindowsTerminal")) process.Kill();
-                Process.Start(AppDomain.CurrentDomain.BaseDirectory+@"\gosumemory\gosumemory.exe");
+                Process.Start(AppDomain.CurrentDomain.BaseDirectory + @"\gosumemory\gosumemory.exe");
                 Thread.Sleep(1000);
                 ws2.ConnectAsync();
                 Console.WriteLine("Starting Gosumemory");

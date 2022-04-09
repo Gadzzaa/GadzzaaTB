@@ -1,9 +1,14 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Net;
 using System.Windows;
 using GadzzaaTB.Windows;
 using Microsoft.VisualBasic.Devices;
+using Squirrel;
+using System.Threading.Tasks;
+using GitHub.ReleaseDownloader;
+using NuGet;
 
 namespace GadzzaaTB
 {
@@ -79,15 +84,19 @@ namespace GadzzaaTB
             MainW = new Main();
             updatePage = new UpdaterPage();
             Loaded += MyWindow_Loaded;
-            Closed += MyWindow_Closed;
-
-            AppDomain.CurrentDomain.ProcessExit += OnProcessExit;
+            Closed += OnClosed;
         }
 
-        private void MyWindow_Closed(object sender, EventArgs e)
+        protected void OnClosed(object sender, EventArgs e)
         {
             isClosing = true;
             Main.main.bugReportp.Close();
+            Console.WriteLine("||||||||||||||||||||||||||||||||||");
+            Test();
+            foreach (var process in Process.GetProcessesByName("osu!StreamCompanion")) process.Kill();
+            foreach (var process in Process.GetProcessesByName("WindowsTerminal")) process.Kill();
+            Settings1.Default.Save();
+            Application.Current.Shutdown();
         }
 
         private void MyWindow_Loaded(object sender, RoutedEventArgs e)
@@ -95,15 +104,6 @@ namespace GadzzaaTB
             NavigationFrame.NavigationService.Navigate(MainW);
         }
 
-
-        private static void OnProcessExit(object sender, EventArgs e)
-        {
-            Console.WriteLine("||||||||||||||||||||||||||||||||||");
-            Test();
-            foreach (var process in Process.GetProcessesByName("osu!StreamCompanion")) process.Kill();
-            foreach (var process in Process.GetProcessesByName("WindowsTerminal")) process.Kill();
-            Settings1.Default.Save();
-        }
 
         private static ulong GetTotalMemoryInBytes()
         {

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         Title="GadzzaaTB" Icon="../gadzzaa_Dq1_icon.ico" Height="375" Width="550" WindowStyle="SingleBorderWindow"
-        ResizeMode="CanMinimize" Visibility="Visible"
+        ResizeMode="CanMinimize" Visibility="Visible" 
         FontFamily="{DynamicResource Righteous}" FontWeight="Normal" WindowStartupLocation="CenterScreen">
     <Window.Background>
         <ImageBrush ImageSource="/Images/Untitled-3.png" Stretch="UniformToFill" TileMode="Tile"/>
