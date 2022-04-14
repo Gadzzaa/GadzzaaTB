@@ -48,11 +48,7 @@ namespace GadzzaaTB
         {
             "gadzzaa",
             "howl_osu",
-            "akakikn",
-            "soju_okita",
-            "misterkeyz",
-            "raikouhou123",
-            "zexor_osu"
+            "akakikn"
         };
 
         public BugReport bugReportp;
@@ -339,7 +335,7 @@ namespace GadzzaaTB
                             else
                             {
                                 npText =
-                                    "Error on websocket, please try again the command | If you are still getting this error, please make sure gosumemory is online and ready to use!";
+                                    "Error on websocket! Submit a bug report if this keeps repeating";
                                 Console.WriteLine("Cache3: " + cache3);
                                 Console.WriteLine("Cache3 Values?: " + cache3.HasValues);
                             }
@@ -357,18 +353,11 @@ namespace GadzzaaTB
                             }
                             else
                             {
-                                Console.WriteLine("An error has been recieved from the websocket");
+                                npText =
+                                    "Error on websocket! Submit a bug report if this keeps repeating";
                                 Console.WriteLine("Cache2: " + cache2);
                                 Console.WriteLine("Cache2 Values?: " + cache2.HasValues);
                                 Console.WriteLine("Cache2 FirstMessage?: " + firstMessageLoaded);
-                                main.ws.Close();
-                                main.ws.Connect();
-                                npText =
-                                    "Now Playing | " + decimal.Round((decimal)cache2.GetValue("mStars"), 2) +
-                                    "⭐ | " +
-                                    cache2.GetValue("mapArtistTitle") + " " + cache2.GetValue("mapDiff") +
-                                    " | Mods: " +
-                                    cache2.GetValue("mods") + " | Download: " + cache2.GetValue("dl");
                             }
                         }
 
@@ -415,7 +404,7 @@ namespace GadzzaaTB
                             else
                             {
                                 npppText =
-                                    "Error on websocket, please try again the command | If you are still getting this error, please make sure gosumemory is online and ready to use!";
+                                    "Error on websocket! Submit a bug report if this keeps repeating";
                                 Console.WriteLine("Cache3: " + cache3);
                                 Console.WriteLine("Cache3 Values?: " + cache3.HasValues);
                             }
@@ -438,23 +427,11 @@ namespace GadzzaaTB
                                 }
                                 else
                                 {
-                                    Console.WriteLine("An error has been recieved from the websocket");
+                                    npppText =
+                                        "Error on websocket! Submit a bug report if this keeps repeating";
                                     Console.WriteLine(cache2);
                                     Console.WriteLine(cache2.HasValues);
                                     Console.WriteLine(firstMessageLoaded);
-                                    main.ws.Close();
-                                    main.ws.Connect();
-                                    npppText =
-                                        "PP Values | 100 % : " +
-                                        decimal.Round((decimal)cache2.GetValue("osu_mSSPP"), 2) +
-                                        " pp | 99 % : " +
-                                        decimal.Round((decimal)cache2.GetValue("osu_m99PP"), 2) + " pp | 98 % : " +
-                                        decimal.Round((decimal)cache2.GetValue("osu_m98PP"), 2) +
-                                        " pp | 97 % : " + decimal.Round((decimal)cache2.GetValue("osu_m97PP"), 2) +
-                                        " pp | 96 % : " +
-                                        decimal.Round((decimal)cache2.GetValue("osu_m96PP"), 2) + " pp | 95 % : " +
-                                        decimal.Round((decimal)cache2.GetValue("osu_m95PP"), 2) +
-                                        " pp | Download: " + cache2.GetValue("dl");
                                 }
                             }
                         
