@@ -1,26 +1,22 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
-using System.Net;
 using System.Windows;
-using GadzzaaTB.Windows;
 using Microsoft.VisualBasic.Devices;
-using Squirrel;
-using System.Threading.Tasks;
-using GitHub.ReleaseDownloader;
-using NuGet;
 
-namespace GadzzaaTB
+// ReSharper disable SpecifyACultureInStringConversionExplicitly
+
+namespace GadzzaaTB.Windows
 {
-    public partial class MainWindow : Window
+    public partial class MainWindow
     {
+        // ReSharper disable once IdentifierTypo
         public static FileStream ostrm;
         public static StreamWriter writer;
         public static TextWriter oldOut = Console.Out;
         public bool isClosing;
-        public Main MainW;
+        public Main mainW;
         public UpdaterPage updatePage;
-        private StackTrace stackTrace = new StackTrace();
 
 
         public MainWindow()
@@ -30,12 +26,12 @@ namespace GadzzaaTB
                                 @"StreamCompanion\osu!StreamCompanion.exe"))
                     Settings1.Default.LocationFolder =
                         AppDomain.CurrentDomain.BaseDirectory + @"StreamCompanion";
-                else MessageBox.Show("Invalid install ! Please consider reinstalling the app!", "Error on startup!");                  
+                else MessageBox.Show("Invalid install ! Please consider reinstalling the app!", "Error on startup!");
             if (File.Exists(AppDomain.CurrentDomain.BaseDirectory +
                             @"gosumemory\gosumemory.exe"))
                 Settings1.Default.LocationFolderG =
                     AppDomain.CurrentDomain.BaseDirectory + @"gosumemory";
-             else MessageBox.Show("Invalid install ! Please consider reinstalling the app!", "Error on startup!");                        
+            else MessageBox.Show("Invalid install ! Please consider reinstalling the app!", "Error on startup!");
             Settings1.Default.FirstRun = false;
             var path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) +
                        "\\GadzzaaTB\\logs\\" + DateTime.UtcNow.Year + "-" + DateTime.UtcNow.Month + "-" +
@@ -57,31 +53,30 @@ namespace GadzzaaTB
             }
             catch (Exception e)
             {
-                Console.WriteLine("Cannot open Redirect.txt for writing");
+                Console.WriteLine(@"Cannot open Redirect.txt for writing");
                 Console.WriteLine(e.Message);
                 return;
             }
 
-            Console.SetOut(writer); 
+            Console.SetOut(writer);
 
 
-            Console.WriteLine("||||||||| SYSTEM INFO |||||||||"); Console.WriteLine(); Console.WriteLine(); Console.WriteLine("PC User Name : " + Environment.UserName); Console.WriteLine("OS Version: " + getOSInfo()); Console.WriteLine("Machine Name: " + Environment.MachineName);
-            var OStype = "";
-            if (Environment.Is64BitOperatingSystem)
-                OStype = "64-Bit, ";
-            else
-                OStype = "32-Bit, ";
-            OStype += Environment.ProcessorCount + " Threads";
-            Console.WriteLine("OS Type: " + OStype);
-            var toalRam = GetTotalMemoryInBytes();
-            var toal = Convert.ToDouble(toalRam / (1024 * 1024));
-            var t = Convert.ToInt32(Math.Ceiling(toal / 1024).ToString());
-            Console.WriteLine("Memory: " + t + " GB"); Console.WriteLine(); Console.WriteLine(); Console.WriteLine("|||||||||||||||||||||||||||||||"); Console.WriteLine();
-            Console.WriteLine(); Console.WriteLine(); Console.WriteLine("||||||||| CONSOLE OUTPUT |||||||||"); Console.WriteLine(); Console.WriteLine(); Console.WriteLine("Logging Started");
+            Console.WriteLine(@"SYSTEM INFO");
+            Console.WriteLine(@"PC User Name : " + Environment.UserName);
+            Console.WriteLine(@"OS Version: " + GetOsInfo());
+            Console.WriteLine(@"Machine Name: " + Environment.MachineName);
+            var ostype = Environment.Is64BitOperatingSystem ? "64-Bit, " : "32-Bit, ";
+            ostype += Environment.ProcessorCount + " Threads";
+            Console.WriteLine(@"OS Type: " + ostype);
+            var totalRam = GetTotalMemoryInBytes();
+            var total = Convert.ToDouble(totalRam / (1024 * 1024));
+            var t = Convert.ToInt32(Math.Ceiling(total / 1024).ToString());
+            Console.WriteLine($@"Memory: {t} GB");
+            Console.WriteLine(@"CONSOLE OUTPUT");
 
 
             InitializeComponent();
-            MainW = new Main();
+            mainW = new Main();
             updatePage = new UpdaterPage();
             Loaded += MyWindow_Loaded;
             Closed += OnClosed;
@@ -90,8 +85,7 @@ namespace GadzzaaTB
         protected void OnClosed(object sender, EventArgs e)
         {
             isClosing = true;
-            Main.main.bugReportp.Close();
-            Console.WriteLine("||||||||||||||||||||||||||||||||||");
+            Main.main.bugReport.Close();
             Test();
             foreach (var process in Process.GetProcessesByName("osu!StreamCompanion")) process.Kill();
             foreach (var process in Process.GetProcessesByName("WindowsTerminal")) process.Kill();
@@ -101,7 +95,7 @@ namespace GadzzaaTB
 
         private void MyWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            NavigationFrame.NavigationService.Navigate(MainW);
+            NavigationFrame.NavigationService.Navigate(mainW);
         }
 
 
@@ -115,10 +109,10 @@ namespace GadzzaaTB
             Console.SetOut(oldOut);
             writer.Close();
             ostrm.Close();
-            Console.WriteLine("Done");
+            Console.WriteLine(@"Done");
         }
 
-        public string getOSInfo()
+        public string GetOsInfo()
         {
             //Get Operating system information.
             var os = Environment.OSVersion;
@@ -136,10 +130,7 @@ namespace GadzzaaTB
                         operatingSystem = "95";
                         break;
                     case 10:
-                        if (vs.Revision.ToString() == "2222A")
-                            operatingSystem = "98SE";
-                        else
-                            operatingSystem = "98";
+                        operatingSystem = vs.Revision.ToString() == "2222A" ? "98SE" : "98";
                         break;
                     case 90:
                         operatingSystem = "Me";
@@ -155,16 +146,10 @@ namespace GadzzaaTB
                         operatingSystem = "NT 4.0";
                         break;
                     case 5:
-                        if (vs.Minor == 0)
-                            operatingSystem = "Windows 2000";
-                        else
-                            operatingSystem = "Windows XP";
+                        operatingSystem = vs.Minor == 0 ? "Windows 2000" : "Windows XP";
                         break;
                     case 6:
-                        if (vs.Minor == 0)
-                            operatingSystem = "Windows Vista";
-                        else
-                            operatingSystem = "Windows 7 or Above";
+                        operatingSystem = vs.Minor == 0 ? "Windows Vista" : "Windows 7 or Above";
                         break;
                 }
 

@@ -3,11 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:GadzzaaTB.Windows"
         mc:Ignorable="d"
         Title="BugReport" Height="550" Width="625" WindowStyle="SingleBorderWindow"
         ResizeMode="CanMinimize">
-        <Grid x:Name="grid1" Visibility="Visible">
+    <Grid Visibility="Visible">
         <Grid.RowDefinitions>
             <RowDefinition Height="13*" />
             <RowDefinition Height="94*" />
@@ -18,8 +17,10 @@
         <TextBox HorizontalAlignment="Center" Height="534" TextWrapping="Wrap" Text="BETA"
                  VerticalAlignment="Center" Width="628" Grid.RowSpan="2" FontSize="200" TextAlignment="Center"
                  Background="#19FFFFFF" Foreground="#FF787234" IsEnabled="False" />
-        <Rectangle HorizontalAlignment="Center" Height="35" VerticalAlignment="Top" Width="626" Fill="#7F000000" />
-        <Label FontFamily="{StaticResource Righteous}" Content="GadzzaaTB" HorizontalAlignment="Center" Height="38"
+        <Rectangle Grid.Row="0" HorizontalAlignment="Center" Height="35" VerticalAlignment="Top" Width="626"
+                   Fill="#7F000000" />
+        <Label Grid.Row="0" FontFamily="{StaticResource Righteous}" Content="GadzzaaTB" HorizontalAlignment="Center"
+               Height="38"
                VerticalAlignment="Top" Width="141" FontSize="25" RenderTransformOrigin="0.5,0.5" Foreground="#FF11DE00"
                Margin="189,0">
             <Label.RenderTransform>
@@ -32,5 +33,5 @@
             </Label.RenderTransform>
         </Label>
 
-        </Grid>
+    </Grid>
 </Window>

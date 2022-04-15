@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows;
-using GadzzaaTB;
+using GadzzaaTB.Windows;
 
-namespace Tcoc.ExceptionHandler.Windows
+namespace GadzzaaTB.ExceptionWindow
 {
-    public partial class ExceptionWindow : Window
+    public partial class ExceptionWindow
     {
         public ExceptionWindow()
         {
@@ -14,7 +14,7 @@ namespace Tcoc.ExceptionHandler.Windows
 
         // In a real world application we would use a command
         // property on the viewmodel and some sort of system
-        // service that we iject into the viewmodel to exit the
+        // service that we inject into the viewmodel to exit the
         // application.
         private void OnExitAppClick(object sender, RoutedEventArgs e)
         {

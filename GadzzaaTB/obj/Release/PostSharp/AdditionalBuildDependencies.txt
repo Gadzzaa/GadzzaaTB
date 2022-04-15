@@ -1,0 +1,2 @@
+C:\ProgramData\PostSharp\6.10.9\bin.Release\net472\PostSharp.Compiler.Engine.dll
+C:\Users\Robert Popescu\Desktop\GadzzaaTB\packages\PostSharp.Patterns.Diagnostics.6.10.9\tools\PostSharp.Patterns.Diagnostics.Weaver.dll

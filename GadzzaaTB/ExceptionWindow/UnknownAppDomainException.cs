@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Tcoc.ExceptionHandling.Exceptions
+namespace GadzzaaTB.ExceptionWindow
 {
     public class UnknownAppDomainException : Exception
     {

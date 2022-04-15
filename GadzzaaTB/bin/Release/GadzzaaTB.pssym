@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols LinesOfCode="629" PostSharpLinesOfCode="0" EnhancedTypesCount="15" SchemaVersion="1" PostSharpVersion="6.10.9.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[PostSharp.Patterns.Diagnostics]PostSharp.Patterns.Diagnostics.LogAttribute">
+    <Instance Declaration="#2=A:GadzzaaTB" Id="a9fc9e309813fe2c">
+      <Target Target="#3=M:[GadzzaaTB]Tcoc.ExceptionHandling.Exceptions.UnknownAppDomainException::#ctor(System.String)" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4=Adds logging" Ordinal="0" LinesAvoided="5" />
+      </Target>
+      <Target Target="#5=M:[GadzzaaTB]Tcoc.ExceptionHandler.Windows.ExceptionWindow::#ctor()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" LinesAvoided="5" />
+      </Target>
+      <Target Target="#6=M:[GadzzaaTB]Tcoc.ExceptionHandler.Windows.ExceptionWindow::InitializeComponent()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="2" LinesAvoided="5" />
+      </Target>
+      <Target Target="#7=M:[GadzzaaTB]Tcoc.ExceptionHandler.ExceptionHandling.GlobalExceptionHandlerBase::#ctor()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="3" LinesAvoided="5" />
+      </Target>
+      <Target Target="#8=M:[GadzzaaTB]Tcoc.ExceptionHandler.ExceptionHandling.GlobalExceptionHandlerBase::CatchDispatcherException(System.Exception)" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="4" LinesAvoided="5" />
+      </Target>
+      <Target Target="#9=M:[GadzzaaTB]Tcoc.ExceptionHandler.ExceptionHandling.GlobalExceptionHandlerBase::Log(System.String)" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="5" LinesAvoided="5" />
+      </Target>
+      <Target Target="#10=M:[GadzzaaTB]Tcoc.ExceptionHandler.ExceptionHandling.WindowExceptionHandler::OnUnhandledException(System.Exception)" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="6" LinesAvoided="5" />
+      </Target>
+      <Target Target="#11=M:[GadzzaaTB]Tcoc.ExceptionHandler.ExceptionHandling.WindowExceptionHandler::#ctor()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="7" LinesAvoided="5" />
+      </Target>
+      <Target Target="#12=M:[GadzzaaTB]Tcoc.ExceptionHandler.ViewModels.ExceptionWindowVM::#ctor(System.Exception)" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="8" LinesAvoided="5" />
+      </Target>
+      <Target Target="#13=M:[GadzzaaTB]Tcoc.ExceptionHandler.Extensions.ExceptionExtensions::ThrowOnDispatcher(System.Exception)" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="9" LinesAvoided="5" />
+      </Target>
+      <Target Target="#14=M:[GadzzaaTB]GadzzaaTB.GlobalAspects::#ctor()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="10" LinesAvoided="5" />
+      </Target>
+      <Target Target="#15=M:[GadzzaaTB]GadzzaaTB.Logging::#ctor()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="11" LinesAvoided="5" />
+      </Target>
+      <Target Target="#16=M:[GadzzaaTB]GadzzaaTB.Main::#ctor()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="12" LinesAvoided="5" />
+      </Target>
+      <Target Target="#17=M:[GadzzaaTB]GadzzaaTB.Main::ActivateBot()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="13" LinesAvoided="5" />
+      </Target>
+      <Target Target="#18=M:[GadzzaaTB]GadzzaaTB.Main::InitializeComponent()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="14" LinesAvoided="5" />
+      </Target>
+      <Target Target="#19=M:[GadzzaaTB]GadzzaaTB.App::#ctor()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="16" LinesAvoided="5" />
+      </Target>
+      <Target Target="#20=M:[GadzzaaTB]GadzzaaTB.App::InitializeComponent()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="17" LinesAvoided="5" />
+      </Target>
+      <Target Target="#21=M:[GadzzaaTB]GadzzaaTB.App::Main()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="18" LinesAvoided="5" />
+      </Target>
+      <Target Target="#22=M:[GadzzaaTB]GadzzaaTB.CustomTheme::#ctor()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="19" LinesAvoided="5" />
+      </Target>
+      <Target Target="#23=M:[GadzzaaTB]GadzzaaTB.CustomTheme::GetStyle(System.String, PostSharp.Patterns.Diagnostics.LogLevel, PostSharp.Patterns.Diagnostics.LogRecordKind, PostSharp.Patterns.Diagnostics.Backends.Console.ConsoleThemeItem)" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="20" LinesAvoided="5" />
+      </Target>
+      <Target Target="#24=M:[GadzzaaTB]GadzzaaTB.MainWindow::#ctor()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="21" LinesAvoided="5" />
+      </Target>
+      <Target Target="#25=M:[GadzzaaTB]GadzzaaTB.MainWindow::OnClosed(System.Object, System.EventArgs)" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="22" LinesAvoided="5" />
+      </Target>
+      <Target Target="#26=M:[GadzzaaTB]GadzzaaTB.MainWindow::Test()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="23" LinesAvoided="5" />
+      </Target>
+      <Target Target="#27=M:[GadzzaaTB]GadzzaaTB.MainWindow::getOSInfo()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="24" LinesAvoided="5" />
+      </Target>
+      <Target Target="#28=M:[GadzzaaTB]GadzzaaTB.MainWindow::InitializeComponent()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="25" LinesAvoided="5" />
+      </Target>
+      <Target Target="#29=M:[GadzzaaTB]GadzzaaTB.Windows.BugReport::#ctor()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="26" LinesAvoided="5" />
+      </Target>
+      <Target Target="#30=M:[GadzzaaTB]GadzzaaTB.Windows.BugReport::InitializeComponent()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="27" LinesAvoided="5" />
+      </Target>
+      <Target Target="#31=M:[GadzzaaTB]GadzzaaTB.Windows.UpdaterPage::#ctor()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="28" LinesAvoided="5" />
+      </Target>
+      <Target Target="#32=M:[GadzzaaTB]GadzzaaTB.Windows.UpdaterPage::CheckUpdate()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="29" LinesAvoided="5" />
+      </Target>
+      <Target Target="#33=M:[GadzzaaTB]GadzzaaTB.Windows.UpdaterPage::InitializeComponent()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="30" LinesAvoided="5" />
+      </Target>
+      <Target Target="#34=M:[GadzzaaTB]GadzzaaTB.Main+Bot::#ctor()" Tags="premium">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="15" LinesAvoided="5" />
+      </Target>
+    </Instance>
+  </Class>
+</Symbols>

@@ -1,4 +1,4 @@
-﻿<Window x:Class="Tcoc.ExceptionHandler.Windows.ExceptionWindow"
+﻿<Window x:Class="GadzzaaTB.ExceptionWindow.ExceptionWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -34,7 +34,7 @@
         <!--  Info  -->
         <TextBlock Margin="16"
                    FontSize="14"
-                   Text="An unexpected error occured."
+                   Text="An unexpected error occurred."
                    TextWrapping="Wrap" />
 
         <!--  Exception details  -->

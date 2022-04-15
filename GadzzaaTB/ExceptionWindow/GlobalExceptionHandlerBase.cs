@@ -3,13 +3,12 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
-using Tcoc.ExceptionHandling.Exceptions;
 
-namespace Tcoc.ExceptionHandler.ExceptionHandling
+namespace GadzzaaTB.ExceptionWindow
 {
     public abstract class GlobalExceptionHandlerBase
     {
-        public GlobalExceptionHandlerBase()
+        protected GlobalExceptionHandlerBase()
         {
             AppDomain.CurrentDomain.UnhandledException += OnAppDomainUnhandledException;
             Application.Current.DispatcherUnhandledException += OnDispatcherUnhandledException;
@@ -18,7 +17,7 @@ namespace Tcoc.ExceptionHandler.ExceptionHandling
         }
 
         /// <summary>
-        ///     This methods gets invoked for every unhandled excption
+        ///     This methods gets invoked for every unhandled exception
         ///     that is raise on the application Dispatcher, the AppDomain
         ///     or by the GC cleaning up a faulted Task.
         /// </summary>
@@ -29,7 +28,7 @@ namespace Tcoc.ExceptionHandler.ExceptionHandling
         ///     Override this method to decide if the <see cref="OnUnhandledException(Exception)" />
         ///     method should be called for the passes Dispatcher exception.
         /// </summary>
-        /// <param name="exception">The unhandled excpetion on the applications dispatcher.</param>
+        /// <param name="exception">The unhandled exception on the applications dispatcher.</param>
         /// <returns>
         ///     True if the <see cref="OnUnhandledException(Exception)" /> method should
         ///     be called. False if not
@@ -78,7 +77,7 @@ namespace Tcoc.ExceptionHandler.ExceptionHandling
         /// <summary>
         ///     This method is called when a faulted task, which has the
         ///     exception object set, gets collected by the GC. This is useful
-        ///     to track Exceptions in asnync methods where the caller forgets
+        ///     to track Exceptions in async methods where the caller forgets
         ///     to await the returning task
         /// </summary>
         private void OnUnobservedTaskException(object sender, UnobservedTaskExceptionEventArgs e)
@@ -91,7 +90,7 @@ namespace Tcoc.ExceptionHandler.ExceptionHandling
         /// <summary>
         ///     The method gets called for any unhandled exception on the
         ///     Dispatcher. When e.RequestCatch is set to true, the exception
-        ///     is catched by the Dispatcher and the DispatcherUnhandledException
+        ///     is catch-ed by the Dispatcher and the DispatcherUnhandledException
         ///     event will be invoked.
         /// </summary>
         private void OnFilterDispatcherException(object sender, DispatcherUnhandledExceptionFilterEventArgs e)
@@ -108,7 +107,7 @@ namespace Tcoc.ExceptionHandler.ExceptionHandling
         {
             return e.ExceptionObject as Exception ??
                    new UnknownAppDomainException(
-                       $"AppDomainUnhandledException: Unknown exceptionobject: {e.ExceptionObject}");
+                       $"AppDomainUnhandledException: Unknown exception object: {e.ExceptionObject}");
         }
     }
 }

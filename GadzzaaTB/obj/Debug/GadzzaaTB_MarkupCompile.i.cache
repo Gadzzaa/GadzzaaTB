@@ -8,13 +8,13 @@ C:\Users\Robert Popescu\Desktop\GadzzaaTB\GadzzaaTB\obj\Debug\
 GadzzaaTB
 none
 false
-DEBUG;TRACE
+POSTSHARP;DEBUG;TRACE
 C:\Users\Robert Popescu\Desktop\GadzzaaTB\GadzzaaTB\App.xaml
 5652983474
 1-660512054
-17795560772
-186475118357
+16-928642902
+156-1686866003
 Windows\MainWindow.xaml;Windows\Main.xaml;ExceptionWindow\ExceptionWindow.xaml;Windows\BugReport.xaml;Windows\UpdaterPage.xaml;
 
-True
+False
 

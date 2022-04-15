@@ -1,89 +1,85 @@
-﻿<Page x:Class="GadzzaaTB.Main"
+﻿<Page x:Class="GadzzaaTB.Windows.Main"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       Title="Main" FontFamily="{StaticResource Righteous}" Foreground="White">
-    <Grid x:Name="mainGrid">
+    <Grid x:Name="MainGrid">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20"></ColumnDefinition>
-            <ColumnDefinition Width="Auto"></ColumnDefinition>
-            <ColumnDefinition Width="auto"></ColumnDefinition>
-            <ColumnDefinition Width="auto"></ColumnDefinition>
-            <ColumnDefinition Width="auto"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="20"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="40"></RowDefinition>
-            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="20" />
         </Grid.RowDefinitions>
 
 
         <TextBlock Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"
                    Text="GadzzaaTB"
-                   FontSize="25"/>
+                   FontSize="25" />
 
 
         <TextBlock Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" Text="Integrations status:"
-                   FontSize="20"/>
-        <Button x:Name="StreamCompanionStatus" Grid.Column="3"  Grid.Row="2" Content="StreamCompanion"
-                   HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" 
-                   FontSize="19" Margin="5,1,5,0" Foreground="IndianRed" Background="Transparent"
-                   BorderThickness="0" Click="StreamCompanionStatus_OnClick" Cursor="Hand"
-                   />
+                   FontSize="20" />
+        <Button x:Name="StreamCompanionStatus" Grid.Column="3" Grid.Row="2" Content="StreamCompanion"
+                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"
+                FontSize="19" Margin="5,1,5,0" Foreground="IndianRed" Background="Transparent"
+                BorderThickness="0" Click="StreamCompanionStatus_OnClick" Cursor="Hand" />
         <Button x:Name="GosumemoryStatus" Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="2" Content="Gosumemory"
-                   HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" 
-                   FontSize="19" Margin="5,1,5,0" Foreground="IndianRed" Background="Transparent"
-                   BorderThickness="0" Click="GosumemoryStatus_Click" Cursor="Hand"/>
-        <TextBlock x:Name="RequestStatus"  Grid.Column="3" Grid.Row="4" Text="Requests"
+                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"
+                FontSize="19" Margin="5,1,5,0" Foreground="IndianRed" Background="Transparent"
+                BorderThickness="0" Click="GosumemoryStatus_Click" Cursor="Hand" />
+        <TextBlock x:Name="RequestStatus" Grid.Column="3" Grid.Row="4" Text="Requests"
                    TextAlignment="Center" VerticalAlignment="Center" FontSize="19" Margin="5,0,5,0"
-                   Foreground="Gray"/>
-        <Button x:Name="TwitchStatus"  Grid.Column="4" Grid.Row="4" Grid.ColumnSpan="2" Content="Twitch"
-                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
+                   Foreground="Gray" />
+        <Button x:Name="TwitchStatus" Grid.Column="4" Grid.Row="4" Grid.ColumnSpan="2" Content="Twitch"
+                HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
                 VerticalAlignment="Center" FontSize="19" Margin="5,0,5,0"
                 Foreground="IndianRed" Background="Transparent" BorderThickness="0"
-                Cursor="Hand" Click="TwitchStatus_OnClick"/>
+                Cursor="Hand" Click="TwitchStatus_OnClick" />
 
 
-
-        <DockPanel Grid.Column="3" Grid.Row ="5" Margin="10,25,10,5" >
-            <TextBox Text="!" FontSize="17" TextAlignment="Center" 
-                     BorderThickness="1,1,0,1" IsReadOnly="true"/>
-            <TextBox x:Name="npTextBox" Text ="np" MaxLength="4"
+        <DockPanel Grid.Column="3" Grid.Row="5" Margin="10,25,10,5">
+            <TextBox Text="!" FontSize="17" TextAlignment="Center"
+                     BorderThickness="1,1,0,1" IsReadOnly="true" />
+            <TextBox x:Name="NpTextBox" Text="np" MaxLength="4"
                      TextAlignment="Center" FontSize="17"
                      GotFocus="NpTextBox_OnGotFocus"
-                     LostFocus="NpTextBox_OnLostFocus" BorderThickness="0,1,1,1"/>
+                     LostFocus="NpTextBox_OnLostFocus" BorderThickness="0,1,1,1" />
         </DockPanel>
-        <DockPanel Grid.Column="3" Grid.Row ="6" Margin="10,5,10,5" >
-            <TextBox Text="!" FontSize="17" TextAlignment="Center" 
-                     BorderThickness="1,1,0,1" IsReadOnly="True"/>
-            <TextBox x:Name="npppTextBox"  Text ="nppp"
+        <DockPanel Grid.Column="3" Grid.Row="6" Margin="10,5,10,5">
+            <TextBox Text="!" FontSize="17" TextAlignment="Center"
+                     BorderThickness="1,1,0,1" IsReadOnly="True" />
+            <TextBox x:Name="NpppTextBox" Text="nppp"
                      TextAlignment="Center" FontSize="17" MaxLength="4"
                      GotFocus="NpppTextBox_OnGotFocus"
-                     LostFocus="NpppTextBox_OnLostFocus" 
-                     BorderThickness="0,1,1,1"/>
+                     LostFocus="NpppTextBox_OnLostFocus"
+                     BorderThickness="0,1,1,1" />
         </DockPanel>
         <TextBlock Grid.Column="1" Grid.Row="5" TextAlignment="Left" VerticalAlignment="Center"
-            Text="Display now playing info:" FontSize="16" Margin="0,20,0,0"/>
+                   Text="Display now playing info:" FontSize="16" Margin="0,20,0,0" />
         <TextBlock Grid.Column="1" Grid.Row="6" TextAlignment="Left" VerticalAlignment="Center"
-                   Text="Display now playing PP info:" FontSize="14"/>
+                   Text="Display now playing PP info:" FontSize="14" />
 
 
         <TextBlock Grid.Column="1" Grid.Row="7" TextAlignment="Left" VerticalAlignment="Center"
-                   Text="Twitch Channel Name:" FontSize="16" Margin="0,20,0,0"/>
-        <TextBox x:Name="channelName" Grid.Column="3" Grid.Row="7" TextAlignment="Center" FontSize="17"
+                   Text="Twitch Channel Name:" FontSize="16" Margin="0,20,0,0" />
+        <TextBox x:Name="ChannelName" Grid.Column="3" Grid.Row="7" TextAlignment="Center" FontSize="17"
                  Text="Channel Name" Margin="10,20,10,0" MaxWidth="154" MaxHeight="23"
                  GotFocus="ChannelName_OnGotFocus"
-                 LostFocus="ChannelName_OnLostFocus" TextChanged="channelName_TextChanged"/>
+                 LostFocus="ChannelName_OnLostFocus" TextChanged="channelName_TextChanged" />
 
         <!--<Button Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="5" Margin="100,30" 
                 Content ="Integrations Options" FontSize="15"
@@ -91,19 +87,20 @@
 
         <StackPanel Grid.Column="5" Grid.Row="8" HorizontalAlignment="Right" VerticalAlignment="Bottom">
             <TextBlock TextAlignment="Center" FontSize="15">v.Beta</TextBlock>
-            <Button VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Bug Report" Cursor="Hand" Click="Button_Click"/>
+            <Button VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Bug Report"
+                    Cursor="Hand" Click="Button_Click" />
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Bottom">
             <TextBlock TextAlignment="Center" FontSize="15">twitch.tv/gadzzaa</TextBlock>
         </StackPanel>
 
 
-
-        <Rectangle x:Name="transparentNegru" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="10" Grid.RowSpan="10" 
-                   Fill="#7F000000" Visibility="Hidden"/>
-        <TextBlock x:Name="pleaseWait" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="10" Grid.RowSpan="10"
+        <Rectangle x:Name="TransparentNegru" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="6" Grid.RowSpan="10"
+                   Fill="#7F000000" Visibility="Hidden" />
+        <TextBlock x:Name="PleaseWait" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="6" Grid.RowSpan="10"
                    Text="Please Wait..." FontSize="75" FontStretch="Normal"
-                   TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FF00D884"
-                   TextWrapping="NoWrap" Visibility="Hidden"/>
+                   TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"
+                   Foreground="#FF00D884"
+                   TextWrapping="NoWrap" Visibility="Hidden" />
     </Grid>
 </Page>

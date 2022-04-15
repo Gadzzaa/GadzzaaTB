@@ -8,16 +8,18 @@ using System.Windows.Controls;
 using Octokit;
 using Application = System.Windows.Application;
 
+// ReSharper disable StringLiteralTypo
+
 namespace GadzzaaTB.Windows
 {
     /// <summary>
     ///     Interaction logic for Window1.xaml
     /// </summary>
-    public partial class BugReport : Window
+    public partial class BugReport
     {
-        private string BugReportDescriptionY;
-        private string BugReportNameY;
-        private string line;
+        private string _bugReportDescriptionY;
+        private string _bugReportNameY;
+        private string _line;
 
         public BugReport()
         {
@@ -30,7 +32,7 @@ namespace GadzzaaTB.Windows
 
         private void Window_Closing(object sender, CancelEventArgs e)
         {
-            if (!Main.main.MainA.isClosing)
+            if (!Main.main.mainA.isClosing)
             {
                 Hide();
                 e.Cancel = true;
@@ -39,12 +41,12 @@ namespace GadzzaaTB.Windows
 
         private void BugReportName_OnTextChanged(object sender, TextChangedEventArgs e)
         {
-            BugReportNameY = BugReportName.Text;
+            _bugReportNameY = BugReportName.Text;
         }
 
         private void BugReportDescription_OnTextChanged(object sender, TextChangedEventArgs e)
         {
-            BugReportDescriptionY = BugReportDescription.Text;
+            _bugReportDescriptionY = BugReportDescription.Text;
         }
 
         private async void ButtonBase_OnClick(object sender, RoutedEventArgs e)
@@ -52,9 +54,9 @@ namespace GadzzaaTB.Windows
             var gClient = new GitHubClient(new ProductHeaderValue("Gadzzaa"));
             var tokenAuth = new Credentials("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"); // NOTE: not real token
             gClient.Credentials = tokenAuth;
-            Console.WriteLine("Bug Report Name: " + BugReportNameY);
-            Console.WriteLine("Bug Report Description: " + BugReportDescriptionY);
-            var createIssue = new NewIssue(Environment.MachineName + " reported: " + BugReportNameY);
+            Console.WriteLine(@"Bug Report Name: " + _bugReportNameY);
+            Console.WriteLine(@"Bug Report Description: " + _bugReportDescriptionY);
+            var createIssue = new NewIssue(Environment.MachineName + " reported: " + _bugReportNameY);
             MainWindow.Test();
             var directory =
                 new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) +
@@ -63,25 +65,25 @@ namespace GadzzaaTB.Windows
                 .OrderByDescending(f => f.LastWriteTime)
                 .First();
             var sr = new StreamReader(myFile.FullName);
-            line = sr.ReadLine();
-            BugReportDescriptionY += "\n\n\n\n\nLOG FILE:\n\n" + line + "\n";
-            line = sr.ReadLine();
+            _line = await sr.ReadLineAsync();
+            _bugReportDescriptionY += "\n\n\n\n\nLOG FILE:\n\n" + _line + "\n";
+            _line = await sr.ReadLineAsync();
             //Continue to read until you reach end of file
-            while (line != null)
+            while (_line != null)
             {
                 //write the line to console window
-                BugReportDescriptionY += line + "\n";
+                _bugReportDescriptionY += _line + "\n";
                 //Read the next line
-                line = sr.ReadLine();
+                _line = await sr.ReadLineAsync();
             }
 
             //close the file
             sr.Close();
             Console.ReadLine();
-            
 
-            createIssue.Body = BugReportDescriptionY;
-            var issue = await gClient.Issue.Create("Gadzzaa", "GadzzaaTB", createIssue);
+
+            createIssue.Body = _bugReportDescriptionY;
+            var unused = await gClient.Issue.Create("Gadzzaa", "GadzzaaTB", createIssue);
             Close();
             Process.Start(Application.ResourceAssembly.Location);
             Application.Current.Shutdown();
